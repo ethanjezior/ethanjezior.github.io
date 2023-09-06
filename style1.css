@@ -1,3 +1,7 @@
 body {
-border: 1px double #ff00ff"
+border: 1px double #ff00ff;
+}
+
+html {
+  border: 1px double #ff00ff;
 }
