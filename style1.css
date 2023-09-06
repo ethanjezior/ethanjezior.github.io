@@ -1,7 +1,12 @@
 body {
+height: auto;
 border: 1px double #ff00ff;
 }
 
 html {
   border: 1px double #ff00ff;
+}
+
+#main {
+border: 1px double #ff00ff;
 }
