@@ -1,6 +1,6 @@
 body {
-height: auto;
-border: 1px double #ff00ff;
+  height: auto;
+  border: 1px double #ff00ff;
 }
 
 html {
@@ -8,5 +8,5 @@ html {
 }
 
 #main {
-border: 1px double #ff00ff;
+  border: 1px double #ff00ff;
 }
