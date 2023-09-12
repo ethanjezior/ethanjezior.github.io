@@ -6,6 +6,10 @@ body {
   overflow-y: scroll;
 }
 
+nav {
+  border: 1px solid #ff00ff;
+  display: block;
+}
 html {
   border: 1px solid #ff00ff;
   overflow-x: hidden;
