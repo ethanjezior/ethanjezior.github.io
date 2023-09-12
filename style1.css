@@ -1,6 +1,5 @@
 .center {
-  display: block;
-  margin: 10px auto 20px;
+  text-align: center;
   width: 100vw;
 }
 
