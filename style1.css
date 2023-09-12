@@ -1,3 +1,10 @@
+.center {
+  display: block;
+  ,argin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 body {
   height: auto;
   border: 1px solid #ff00ff;
