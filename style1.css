@@ -1,10 +1,15 @@
 body {
   height: auto;
   border: 1px solid #ff00ff;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html {
   border: 1px solid #ff00ff;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #main {
