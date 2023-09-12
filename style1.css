@@ -8,11 +8,11 @@ body {
 
 nav {
   border: 1px solid #ff00ff;
+  padding: 5px;
   display: block;
 }
 html {
   border: 1px solid #ff00ff;
-  padding: 5px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
