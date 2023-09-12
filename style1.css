@@ -1,8 +1,7 @@
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
+  margin: 10px auto 20px;
+  width: 100vw;
 }
 
 body {
