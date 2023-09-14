@@ -8,7 +8,8 @@ body {
 
 nav {
   border: 1px solid #ff00ff;
-  padding: 5px;
+  margin: 0px 5px 0px 5px;
+  padding: 10px;
   display: block;
 }
 html {
