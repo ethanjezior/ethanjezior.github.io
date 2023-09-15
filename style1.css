@@ -9,10 +9,11 @@ body {
 nav {
   border: 1px solid #ff00ff;
   margin: 0px 5px 0px 5px;
-  padding: 10px;
+  padding: 2%;
   display: block;
 }
 html {
+  padding: 1%;
   border: 1px solid #ff00ff;
   overflow-x: hidden;
   overflow-y: scroll;
