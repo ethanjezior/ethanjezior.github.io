@@ -20,10 +20,19 @@
         margin: 1%;
         padding: 1%;
       }
-      p {
+      page {
+      display: block;
+      color: #ff00ff;
+      text-align: center;
+      padding: 14px 16px;
+      }
+      navbox {
+      position: sticky;
       border: 1px solid #ff00ff;
-      margin: 1%;
-      padding: 1%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
       }
       body { height: auto; border: 1px solid #ff00ff}
       li { float: left; } 
@@ -44,21 +53,25 @@
     </div>
     <hr style="color: #ff00ff">
     <div id="div">
-    <nav class="nav" style="color:#ff00ff">
-      <p id="p">
-        <a href="#home" style="color:#ff99ff">
+    <nav class="nav">
+      <p id="navbox">
+        <a href="#home">
           Home
         </a>
         &nbsp; &#124; &nbsp;
-        <a href="#about" style="color:#ff99ff">
+        <a href="#news">
+          News
+        </a>
+        &nbsp; &#124; &nbsp;
+        <a href="#about">
           About
         </a>
         &nbsp; &#124; &nbsp;
-        <a href="#projects" style="color:#ff99ff">
+        <a href="#projects">
           Projects
         </a>
         &nbsp; &#124; &nbsp;
-        <a href="#contact" style="color:#ff99ff">
+        <a href="#contact">
           Contact Me
         </a>
         &nbsp; &#124; &nbsp;
