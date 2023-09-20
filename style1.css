@@ -28,6 +28,16 @@ footer {
   text-align: left;
 }
 
+header {
+  display: block;
+  text-align: center;
+}
+
+img.center {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 #main {
   border: 1px solid #ff00ff;
 }
