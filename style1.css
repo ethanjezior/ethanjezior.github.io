@@ -9,7 +9,7 @@ body {
 nav {
   border: 1px solid #ff00ff;
   margin: 0px 5px 0px 5px;
-  padding: 2%;
+  padding: 2% 2% 2%;
   display: block;
 }
 
@@ -23,6 +23,7 @@ html {
 
 footer {
   position: fixed;
+  width: 100%;
   left: 0; 
   bottom: 0;
   text-align: left;
