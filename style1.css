@@ -9,7 +9,7 @@ body {
 nav {
   border: 1px solid #ff00ff;
   margin: 5px 5px 5px;
-  padding: 2% 2% 2%;
+  padding: 2% 2% 2% 0%;
   display: block;
 }
 
