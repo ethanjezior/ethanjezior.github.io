@@ -12,12 +12,20 @@ nav {
   padding: 2%;
   display: block;
 }
+
 html {
   padding: 1% 1% 1% 1%;
   margin: 2%;
   border: 1px solid #ff00ff;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+footer {
+  position: fixed;
+  left: 0; 
+  bottom: 0;
+  text-align: left;
 }
 
 #main {
