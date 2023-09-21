@@ -1,18 +1,3 @@
-body {
-  height: auto;
-  border: 1px solid #ff00ff;
-  max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-nav {
-  border: 1px solid #ff00ff;
-  margin: 0%;
-  padding: 2% 2% 2% 0%;
-  display: block;
-}
-
 html {
   padding: 1% 1% 1% 1%;
   margin: 1%;
@@ -20,23 +5,32 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
+body {
+  height: auto;
+  border: 1px solid #ff00ff;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+header {
+  display: block;
+  text-align: center;
+}
+nav {
+  border: 1px solid #ff00ff;
+  margin: 0%;
+  padding: 2% 2% 2% 0%;
+  display: block;
+}
+main {
+  border: 1px solid #ff00ff;
+}
 footer {
   position: sticky;
   width: 100%;
   text-align: left;
 }
-
-header {
-  display: block;
-  text-align: center;
-}
-
 img.center {
   display: inline-block;
   margin: 0 auto;
-}
-
-#main {
-  border: 1px solid #ff00ff;
 }
