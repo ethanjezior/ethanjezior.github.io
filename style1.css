@@ -6,6 +6,10 @@ html {
   overflow-x:hidden;
   background-color:#444444;
 }
+header img {
+  width: 800px;
+  height: auto;
+}
 nav ul {
   list-style-type:none;
   margin:0;
