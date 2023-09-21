@@ -1,26 +1,26 @@
 /*All pages------------------------------------------*/
 html {
-  padding: 1%;
-  margin: 1%;
-  border: 1px solid #ff00ff;
-  overflow-x: hidden;
-  background-color: #444444;
+  padding:1%;
+  margin:1%;
+  border:1px solid #ff00ff;
+  overflow-x:hidden;
+  background-color:#444444;
 }
-nav ul{
-	list-style-type: none;
-	margin: 0;
-	text-align: center;
+nav ul {
+  list-style-type:none;
+  margin:0;
+  text-align:center;
 }
-nav li{
-	display: inline-block;
+nav li {
+  display:inline-block;
 }
-nav li a{
-	display: block;
-  border: 1px solid #ff00ff;
-	text-align: center;
-	padding: .5em 1em;
-	text-decoration: none;
-  color: #ff99ff;
+nav li a {
+  display:block;
+  border:1px solid #ff00ff;
+  text-align:center;
+  padding:.5em 1em;
+  text-decoration:none;
+  color:#ff99ff;
 }
 /*index page------------------------------------------*/
 
