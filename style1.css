@@ -3,7 +3,8 @@ html {
   padding: 1%;
   margin: 1%;
   border: 1px solid #ff00ff;
-  overflow-x: hiddem;
+  overflow-x: hidden;
+  background-color: #444444;
 }
 /*index page------------------------------------------*/
 
