@@ -7,6 +7,7 @@ html {
   background-color:#444444;
 }
 img {
+  object-fit: contain;
   max-width: 15%;
   display: block;
   width: 800px;
