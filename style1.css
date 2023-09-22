@@ -12,6 +12,9 @@ img {
   width: 85vw;
   height: auto;
 }
+nav {
+  background-color: #222;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
