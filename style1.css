@@ -34,7 +34,7 @@ nav li a {
   text-align: center;
   background-color: #222;
 }
-li a.active {
+a.active {
   background-color: #f0f;
   color: #000;
 }
