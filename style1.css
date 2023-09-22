@@ -2,7 +2,7 @@
 html {
   padding: 1%;
   margin: 1%;
-  border: 1px solid #ff00ff;
+  border: 1px solid #f0f;
   overflow-x: hidden;
   background-color: #444;
 }
@@ -14,7 +14,9 @@ img {
 }
 nav ul {
   list-style-type: none;
-  margin: 3px 0;
+  margin: 0;
+  padding: 0;
+  background-color: #888;
   text-align: center;
 }
 nav li {
@@ -25,15 +27,23 @@ nav li {
 }
 nav li a {
   background-color: #222;
+  width: auto;
   display: block;
-  border: 1px solid #ff00ff;
   text-align: center;
   padding: .5em 1em;
   text-decoration: none;
   color: #ff99ff;
 }
+nav li a.active {
+  background-color: #f0f;
+  color: #000;
+}
+nav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 main {
-  border: 1px solid #ff00ff;
+  border: 1px solid #f0f;
 }
 footer {
   margin: 5px 3px;
