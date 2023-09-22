@@ -4,7 +4,7 @@ html {
   margin: 1%;
   border: 1px solid #ff00ff;
   overflow-x: hidden;
-  background-color: #444444;
+  background-color: #444;
 }
 img {
   object-fit: contain;
@@ -33,6 +33,11 @@ nav li a {
 }
 main {
   border: 1px solid #ff00ff;
+}
+footer {
+  margin: 5px 3px;
+  background-color: #333;
+  border: 2px double #444
 }
 /*index page------------------------------------------*/
 p ul li {
