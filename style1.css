@@ -13,20 +13,23 @@ img {
   height: auto;
 }
 nav ul {
-  list-style-type:none;
-  margin:0;
-  text-align:center;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
 }
 nav li {
-  display:inline-block;
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
 }
 nav li a {
-  display:block;
-  border:1px solid #ff00ff;
-  text-align:center;
-  padding:.5em 1em;
-  text-decoration:none;
-  color:#ff99ff;
+  display: block;
+  border: 1px solid #ff00ff;
+  text-align: center;
+  padding: .5em 1em;
+  text-decoration: none;
+  color: #ff99ff;
 }
 main {
   border: 1px solid #ff00ff;
