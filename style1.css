@@ -12,12 +12,9 @@ img {
   width: 85vw;
   height: auto;
 }
-nav {
-  background-color: #222;
-}
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 3px 0;
   text-align: center;
 }
 nav li {
@@ -27,6 +24,7 @@ nav li {
   font-weight: bold;
 }
 nav li a {
+  background-color: #222;
   display: block;
   border: 1px solid #ff00ff;
   text-align: center;
