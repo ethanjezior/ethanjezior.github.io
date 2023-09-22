@@ -46,8 +46,9 @@ nav li a:hover:not(.active) {
 main {
   border: 1px solid #f0f;
 }
-footer {
+footer p {
   margin: 5px 3px;
+  color:#ff99ff
   background-color: #333;
   border: 2px double #444
 }
