@@ -28,6 +28,9 @@ nav li a {
   text-decoration:none;
   color:#ff99ff;
 }
+main {
+  border: 1px solid #ff00ff;
+}
 /*index page------------------------------------------*/
 
 /*news page------------------------------------------*/
