@@ -1,10 +1,10 @@
 /*All pages------------------------------------------*/
 html {
-  padding:1%;
-  margin:1%;
-  border:1px solid #ff00ff;
-  overflow-x:hidden;
-  background-color:#444444;
+  padding: 1%;
+  margin: 1%;
+  border: 1px solid #ff00ff;
+  overflow-x: hidden;
+  background-color: #444444;
 }
 img {
   object-fit: contain;
