@@ -38,7 +38,7 @@ main {
 p ul li {
   display: block;
   font-size: 1.25em;
-  margin: 5px;
+  margin: 5px 3px;
   color: #FFF;
   background-color: #000;
 }
