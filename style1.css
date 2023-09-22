@@ -8,7 +8,7 @@ html {
 }
 img {
   object-fit: contain;
-  max-width: 15%;
+  max-width: 45%;
   display: block;
   width: 800px;
   height: auto;
