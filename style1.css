@@ -38,7 +38,8 @@ main {
 p ul li {
   display: block;
   font-size: 1.25em;
-  
+  color: #FFF;
+  background-color: #000;
 }
 /*news page------------------------------------------*/
 
