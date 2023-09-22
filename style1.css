@@ -8,9 +8,8 @@ html {
 }
 img {
   object-fit: contain;
-  max-width: 45%;
   display: block;
-  width: 45vw;
+  width: 100vw;
   height: auto;
 }
 nav ul {
