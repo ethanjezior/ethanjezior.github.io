@@ -45,8 +45,14 @@ nav li a:hover:not(.active) {
   color: white;
 }
 main {
+  background-color: #000;
   border: 1px solid #f0f;
   padding: 3px;
+  color: #FFF;
+  display: block;
+  font-size: 1.25em;
+  padding: 5px;
+  margin: 5px 3px;
 }
 footer p {
   margin: 5px 3px;
@@ -56,12 +62,7 @@ footer p {
 }
 /*index page------------------------------------------*/
 #indexmain {
-  display: block;
   font-size: 1.25em;
-  padding: 5px;
-  margin: 5px 3px;
-  color: #FFF;
-  background-color: #000;
 }
 /*news page------------------------------------------*/
 
