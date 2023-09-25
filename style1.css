@@ -46,6 +46,7 @@ nav li a:hover:not(.active) {
 }
 main {
   border: 1px solid #f0f;
+  padding: 3px;
 }
 footer p {
   margin: 5px 3px;
