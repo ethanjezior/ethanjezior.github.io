@@ -54,9 +54,10 @@ footer p {
   border: 2px double #444
 }
 /*index page------------------------------------------*/
-p ul li {
+#indexmain {
   display: block;
   font-size: 1.25em;
+  padding: 5px;
   margin: 5px 3px;
   color: #FFF;
   background-color: #000;
