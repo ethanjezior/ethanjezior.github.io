@@ -7,11 +7,12 @@ html {
   background-color: #444;
 }
 img {
+  background-color: #111;
   object-fit: contain;
   display: block;
+  text-align: center;
   width: 85vw;
   height: auto;
-  background-color: #111;
 }
 nav ul {
   list-style-type: none;
