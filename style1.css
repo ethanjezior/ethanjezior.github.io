@@ -48,7 +48,6 @@ nav li a:hover:not(.active) {
 main {
   background-color: #000;
   border: 1px solid #f0f;
-  padding: 3px;
   color: #FFF;
   display: block;
   font-size: 1.25em;
@@ -62,7 +61,7 @@ footer p {
   border: 2px double #444
 }
 /*index page------------------------------------------*/
-#indexmain {
+#aboutmain {
   font-size: 1.25em;
 }
 /*news page------------------------------------------*/
