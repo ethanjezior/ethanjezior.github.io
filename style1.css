@@ -15,8 +15,8 @@ header {
 .header {
   margin-left: auto;
   margin-right: auto;
-  background-color: #111;
   object-fit: contain;
+  background-color: #111;
   display: block;
   width: 85vw;
   height: auto;
