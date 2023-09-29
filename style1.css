@@ -92,5 +92,9 @@ footer p {
 }
 .map {
   border: 5px solid #ff55ff;
+  width: 600;
+  height: 450;
+  loading: lazy;
+  referrerpolicy: no-referrer-when-downgrade;
 }
 
