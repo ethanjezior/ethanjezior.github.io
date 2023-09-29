@@ -25,7 +25,7 @@ nav {
   margin: 5px 5px;
 }
 nav .logo {
-  display: inline-block;
+  display: block;
   text-align: center;
   padding: .5em 1em;
   height: 50px;
