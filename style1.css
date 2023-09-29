@@ -6,7 +6,7 @@ html {
   overflow-x: hidden;
   background-color: #444;
 }
-img {
+.header {
   background-color: #111;
   object-fit: contain;
   display: block;
@@ -69,5 +69,21 @@ footer p {
   font-size: 1.25em;
 }
 /*projects page------------------------------------------*/
+#projects {
 
+}
+.project-entry {
+
+}
 /*contact page------------------------------------------*/
+#contact {
+  text-align: center;
+}
+#contact a {
+  text-decoration: none;
+  color: #1ad1ff;
+}
+.map {
+
+}
+
