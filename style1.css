@@ -23,14 +23,16 @@ nav {
   margin: 5px 5px;
 }
 nav .logo-left {
+  display: block;
   text-align: center;
-  display: inline-box;
+  padding: .5em 1em;
   height: 50px;
   width: auto;
 }
-nav .logo-right {
+nav ul li .logo-right {
+  display: block;
   text-align: center;
-  display: inline-block;
+  padding: .5em 1em;
   height: 50px;
   width: auto;
 }
