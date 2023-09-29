@@ -26,15 +26,8 @@ header {
 nav {
   margin: 5px 5px;
 }
-nav .logo-left {
-  display: block;
-  text-align: center;
-  padding: .5em 1em;
-  height: 50px;
-  width: auto;
-}
-nav ul li .logo-right {
-  display: block;
+nav .logo {
+  display: inline-block;
   text-align: center;
   padding: .5em 1em;
   height: 50px;
