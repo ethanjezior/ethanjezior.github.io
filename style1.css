@@ -6,6 +6,9 @@ html {
   overflow-x: hidden;
   background-color: #444;
 }
+header {
+text-align: center;
+}
 .header {
   background-color: #111;
   object-fit: contain;
