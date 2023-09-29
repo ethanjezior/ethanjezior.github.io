@@ -26,7 +26,6 @@ nav {
 }
 nav .logo {
   display: block;
-  object-fit: contain;
   text-align: center;
   height: 35px;
   width: auto;
