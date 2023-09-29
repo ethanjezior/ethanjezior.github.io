@@ -93,6 +93,7 @@ footer p {
 }
 #animain {
   font-size: 1.05em;
+  list-style-type: none;
 }
 /*projects page------------------------------------------*/
 #projects {
