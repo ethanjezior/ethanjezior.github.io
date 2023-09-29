@@ -74,6 +74,9 @@ main {
   padding: 5px;
   margin: 5px 3px;
 }
+.indent {
+  text-indent: 15px;
+}
 footer p {
   margin: 5px 3px;
   color:#ff99ff
