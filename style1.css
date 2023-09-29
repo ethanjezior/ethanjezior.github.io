@@ -21,6 +21,7 @@ header {
   display: block;
   width: 85vw;
   height: auto;
+  border: 1px solid blue;
 }
 nav {
   margin: 5px 5px;
