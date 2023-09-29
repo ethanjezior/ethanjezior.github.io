@@ -29,6 +29,7 @@ nav .logo {
   text-align: center;
   height: 50px;
   width: auto;
+  text-decoration: none;
 }
 nav ul {
   list-style-type: none;
