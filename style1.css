@@ -13,6 +13,8 @@ header {
   text-align: center;
 }
 .header {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #111;
   object-fit: contain;
   display: block;
