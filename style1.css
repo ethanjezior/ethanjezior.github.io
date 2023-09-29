@@ -11,7 +11,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 10px solid red;
 }
 .header {
   margin-left: auto;
@@ -21,7 +20,6 @@ header {
   display: block;
   width: 85vw;
   height: auto;
-  border: 10px solid blue;
 }
 nav {
   margin: 5px 5px;
@@ -32,6 +30,7 @@ nav .logo {
   padding: .5em 1em;
   height: 50px;
   width: auto;
+  text-decoration: none;
 }
 nav ul {
   list-style-type: none;
@@ -45,8 +44,8 @@ nav ul {
 nav li {
   display: inline-block;
   font-size: 1.25em;
-  width: 50px;
   height: 50px;
+  width: auto;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
 }
