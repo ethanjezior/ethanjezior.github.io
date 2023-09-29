@@ -11,7 +11,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid red;
+  border: 10px solid red;
 }
 .header {
   margin-left: auto;
@@ -21,7 +21,7 @@ header {
   display: block;
   width: 85vw;
   height: auto;
-  border: 1px solid blue;
+  border: 10px solid blue;
 }
 nav {
   margin: 5px 5px;
