@@ -68,7 +68,10 @@ footer p {
   border: 2px double #444
 }
 /*index page------------------------------------------*/
-
+#welcome {
+  text-align: center;
+  font-size: 30px;
+}
 /*news page------------------------------------------*/
 
 /*about page------------------------------------------*/
