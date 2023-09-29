@@ -92,8 +92,8 @@ footer p {
 }
 .map {
   border: 5px solid #ff55ff;
-  width: 600;
-  height: 450;
+  width: 600px;
+  height: 450px;
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
 }
