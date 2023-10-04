@@ -1,8 +1,8 @@
 /*All pages------------------------------------------*/
 html {
   box-sizing: border-box;
-  padding: 1%;
-  margin: 1%;
+  padding: 1vw;
+  margin: 1vw;
   border: 1px solid #f0f;
   overflow-x: hidden;
   background-color: #444;
@@ -22,14 +22,14 @@ header {
   height: auto;
 }
 nav {
-  margin: 5px 5px;
+  margin: 0.4629vw 0.2602vw; /* ~5px, ~5px */
 }
 nav .logo {
   margin-top: auto;
   margin-bottom: auto;
   display: block;
   text-align: center;
-  max-height: 50px;
+  max-height: 5vw;
   width: auto;
   text-decoration: none;
   object-fit: contain;
@@ -46,7 +46,7 @@ nav ul {
 nav li {
   display: inline-block;
   font-size: 1.25em;
-  height: 50px;
+  height: 21.6%; /* ~50px */
   width: auto;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
@@ -72,15 +72,15 @@ main {
   border: 1px solid #f0f;
   color: #FFF;
   display: block;
-  font-size: 1.25em;
-  padding: 5px;
-  margin: 5px 3px;
+  font-size: 1.2500em;
+  padding: 0.2600vw 0.4630vw; /* ~5px*/
+  margin: 0.4629vw 0.1613vw; /* ~5px, ~3px*/
 }
 .indent {
-  text-indent: 15px;
+  text-indent: 0.7813vw; /* ~15px */
 }
 footer p {
-  margin: 5px 3px;
+  margin: 0.4629vw 0.1613vw; /* ~5px, ~3px*/
   color:#ff99ff
   background-color: #333;
   border: 2px double #444
@@ -88,16 +88,16 @@ footer p {
 /*index page------------------------------------------*/
 #welcome {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.8750em; /* ~30px */
 }
 /*news page------------------------------------------*/
 
 /*about page------------------------------------------*/
 #aboutmain {
-  font-size: 1.05em;
+  font-size: 1.0500em;
 }
 #animain {
-  font-size: 1.05em;
+  font-size: 1.0500em;
   list-style-type: none;
 }
 /*projects page------------------------------------------*/
@@ -116,9 +116,9 @@ footer p {
   color: #1ad1ff;
 }
 .map {
-  border: 5px solid #ff55ff;
-  width: 600px;
-  height: 450px;
+  border: 46.296vw 26.042vw solid #ff55ff; /* ~5px */
+  max-width: 31.25vw; /* ~600px*/
+  max-height: 41.67vw; /* ~450px*/
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
 }
