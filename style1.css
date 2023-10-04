@@ -29,7 +29,7 @@ nav .logo {
   margin-bottom: auto;
   display: block;
   text-align: center;
-  max-height: 5vw;
+  max-height: 3.7037vw;
   width: auto;
   text-decoration: none;
   object-fit: contain;
@@ -45,7 +45,7 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1.2500em;
   height: 21.6%; /* ~50px */
   width: auto;
   font-family: Verdana, Arial, sans-serif;
