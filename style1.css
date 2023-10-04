@@ -18,7 +18,7 @@ header {
   margin-right: auto;
   object-fit: contain;
   display: block;
-  width: 85vw;
+  max-width: 85vw;
   height: auto;
 }
 nav {
@@ -46,7 +46,7 @@ nav ul {
 nav li {
   display: inline-block;
   font-size: 1.2500em;
-  height: 21.6%; /* ~50px */
+  max-height: 21.6%; /* ~50px */
   width: auto;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
@@ -116,7 +116,7 @@ footer p {
   color: #1ad1ff;
 }
 .map {
-  border: 46.296vw 26.042vw solid #ff55ff; /* ~5px */
+  border: 0.4629vw 0.2604vw solid #ff55ff; /* ~5px */
   max-width: 31.25vw; /* ~600px*/
   max-height: 41.67vw; /* ~450px*/
   loading: lazy;
