@@ -30,6 +30,7 @@ nav .logo {
   height: 35px;
   width: auto;
   text-decoration: none;
+  object-fit: contain;
 }
 nav ul {
   list-style-type: none;
