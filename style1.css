@@ -46,7 +46,7 @@ nav ul {
 nav li {
   display: inline-block;
   font-size: 1.2500em;
-  max-height: 21.6%; /* ~50px */
+  max-height: 21.6vw; /* ~50px */
   width: auto;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
