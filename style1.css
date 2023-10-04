@@ -25,6 +25,8 @@ nav {
   margin: 5px 5px;
 }
 nav .logo {
+  margin-top: auto;
+  margin-bottom: auto;
   display: block;
   text-align: center;
   max-height: 50px;
