@@ -11,7 +11,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #111;
 }
 .header {
   margin-left: auto;
@@ -20,6 +19,7 @@ header {
   display: block;
   max-width: 85vw;
   height: auto;
+  background-color: #111;
 }
 nav {
   margin: 0.4629vw 0.2602vw; /* ~5px, ~5px */
