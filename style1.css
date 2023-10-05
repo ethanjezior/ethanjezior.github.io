@@ -112,7 +112,7 @@ footer p {
 #project-page-caption {
   text-align: center;
 }
-p ul li {
+ul li, li {
   list-style-type: none;
 }
 .project-nav {
