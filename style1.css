@@ -123,13 +123,13 @@ footer p {
 .project-nav .java-script, #java-script {
   color: #00e6e6;
 }
-.project-nav .html/css, #html/css {
+.project-nav .html-css, #html-css {
   color: #005ce6;
 }
 .project-nav .c-sharp, #c-sharp {
   color: #8c1aff;
 }
-.project-nav .c++, #c++ {
+.project-nav .c-plus-plus, #c-plus-plus {
   color: #ff8c1a;
 }
 .projects {
