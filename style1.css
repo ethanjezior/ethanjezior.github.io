@@ -76,6 +76,9 @@ main {
   padding: 0.2600vw 0.4630vw; /* ~5px*/
   margin: 0.4629vw 0.1613vw; /* ~5px, ~3px*/
 }
+.break {
+  max-width: 80vw;
+}
 .indent {
   text-indent: 0.7813vw; /* ~15px */
 }
@@ -101,7 +104,15 @@ footer p {
   list-style-type: none;
 }
 /*projects page------------------------------------------*/
-#projects {
+#project-page-selector {
+  text-align: center;
+  font-size: 2.0000em;
+  text-decoration-line: underline;
+}
+#project-page-caption {
+  text-align: center;
+}
+.projects {
 
 }
 .project-entry {
@@ -121,5 +132,13 @@ footer p {
   max-height: 45vw; /*41.67vw,  ~450px*/
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
+}
+/* Wide-Screen Display */
+.wide-screen{
+  display: block;
+}
+/* Mobile Display */
+.mobile {
+  display: none;
 }
 
