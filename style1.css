@@ -112,7 +112,7 @@ footer p {
 #project-page-caption {
   text-align: center;
 }
-ul li, li {
+.projects-body ul li, .projects.body li {
   list-style-type: none;
   display: inline-block;
   text-align: center;
