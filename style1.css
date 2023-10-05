@@ -112,12 +112,25 @@ footer p {
 #project-page-caption {
   text-align: center;
 }
-#project-nav h3 a {
+.project-nav {
   text-decoration: none;
   text-align: center;
+  color: #fff;
 }
-##java {
-  color: green;
+#java {
+  color: #2eb82e;
+}
+#java-script {
+  color: #00e6e6;
+}
+#html/css {
+  color: #005ce6;
+}
+#c-sharp {
+  color: #8c1aff;
+}
+#c++ {
+  color: #ff8c1a;
 }
 .projects {
 
