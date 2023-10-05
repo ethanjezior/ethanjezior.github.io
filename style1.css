@@ -112,7 +112,7 @@ footer p {
 #project-page-caption {
   text-align: center;
 }
-.projects-body ul li, .projects.body li {
+.projects-body ul li, .projects-body li {
   list-style-type: none;
   display: inline-block;
   text-align: center;
@@ -163,11 +163,11 @@ footer p {
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
 }
-/* Wide-Screen Display */
+/* Wide-Screen Display---------------------------------------------------------*/
 .wide-screen{
   display: block;
 }
-/* Mobile Display */
+/* Mobile Display--------------------------------------------------------------*/
 .mobile {
   display: none;
 }
