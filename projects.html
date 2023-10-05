@@ -11,10 +11,43 @@
     </head>
     
     <body>
-        <header>
+	<!-- Wide-Screen Display -->
+	<header class="wide-screen">
             <img  class="header" src="header.png" alt="header">
         </header>
-        <nav>
+    	<nav class="wide-screen">
+    		<ul>
+			<li><img class="logo" src="logo.png" alt="logo"></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a class="active" href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><img class="logo" src="logo.png" alt="logo"></li>
+    		</ul>
+	</nav>
+	<main class="wide-screen">
+        	<p id="project-page-selector">Projects</p>
+		<p id="project-page-caption">
+			Which projects would you like to view?
+		</p>
+		<hr class="break">
+		<h3><a href="">Java</a></h3>
+		<h3><a href="">Java-Script</a></h3>
+		<h3><a href="">HTML/CSS</a></h3>
+		<h3><a href="">C#</a></h3>
+		<h3><a href="">C++</a></h3>
+        </main>
+	<footer class="wide-screen">
+            <p>
+                &copy; Copyright 2023. All Rights Reserved.
+            </p>
+        </footer>
+	<!-- Mobile Display -->
+	<header class="mobile">
+            <img  class="header" src="header.png" alt="header">
+        </header>
+	<nav class="mobile">
             <ul>
 		<li><img class="logo" src="logo.png" alt="logo"></li>
 		<li><a href="index.html">Home</a></li>
@@ -25,11 +58,9 @@
 		<li><img class="logo" src="logo.png" alt="logo"></li>
             </ul>
         </nav>
-        <main>
-            <p>
-                
-            </p>
-        </main>
+        <main class="mobile">
+		
+	</main>
         <footer>
             <p>
                 &copy; Copyright 2023. All Rights Reserved.
