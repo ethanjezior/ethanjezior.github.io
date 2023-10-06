@@ -157,9 +157,9 @@ footer p {
   color: #1ad1ff;
 }
 .map {
-  border: 0.4629vw 0.2604vw solid #ff55ff; /* ~5px */
-  max-width: 45vw; /*31.25vw,  ~600px*/
-  max-height: 45vw; /*41.67vw,  ~450px*/
+  border: 0.9000vw solid #ff55ff; /* ~5px */
+  width: 45vw; /*31.25vw,  ~600px*/
+  height: 45vw; /*41.67vw,  ~450px*/
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
 }
