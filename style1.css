@@ -68,6 +68,7 @@ nav li a:hover:not(.active) {
   color: white;
 }
 main {
+  min-height: 65vh;
   background-color: #000;
   border: 1px solid #f0f;
   color: #FFF;
@@ -158,8 +159,8 @@ footer p {
 }
 .map {
   border: 0.9000vw solid #ff55ff; /* ~5px */
-  width: 45vw; /*31.25vw,  ~600px*/
-  height: 45vw; /*41.67vw,  ~450px*/
+  width: 45vw; 
+  height: 45vw; 
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
 }
