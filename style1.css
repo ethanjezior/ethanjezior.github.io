@@ -33,7 +33,7 @@ header {
   display: block;
   text-align: center;
   height: 2.350vw;
-  width: auto;
+  width: 2.350vw;
   text-decoration: none;
   object-fit: contain;
 }
@@ -53,6 +53,7 @@ header {
   width: auto;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
+  list-style-type: none;
 }
 .ws-nav li a {
   display: block;
