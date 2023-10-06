@@ -24,14 +24,10 @@ header {
   width: 85vw;
   height: auto;
 }
-.m-header {
-  width: 100vw;
-  height: auto;
-}
-nav {
+.ws-nav {
   margin: 0.4629vw 0.2602vw; /* ~5px, ~5px */
 }
-nav .logo {
+.ws-nav .logo {
   margin-top: auto;
   margin-bottom: auto;
   display: block;
@@ -41,7 +37,7 @@ nav .logo {
   text-decoration: none;
   object-fit: contain;
 }
-nav ul {
+.ws-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,7 +46,7 @@ nav ul {
   text-align: center;
   border: 1px solid #FFF;
 }
-nav li {
+.ws-nav li {
   display: inline-block;
   font-size: 1.2500em;
   max-height: 21.6vw; /* ~50px */
@@ -58,7 +54,7 @@ nav li {
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
 }
-nav li a {
+.ws-nav li a {
   display: block;
   color: #ff99ff;
   padding: .5em 1em;
@@ -70,7 +66,7 @@ a.active {
   background-color: #f0f;
   color: #000;
 }
-nav li a:hover:not(.active) {
+.ws-nav li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
@@ -120,7 +116,7 @@ footer p {
 #project-page-caption {
   text-align: center;
 }
-.projects-body ul li, .projects-body li {
+.projects-body ul li, .projects-body ul li a {
   list-style-type: none;
   display: inline-block;
   text-align: center;
@@ -178,6 +174,43 @@ footer p {
 /* All Mobile pages-------------------------------------------------------------------------------------------------------------------------------------*/
 .mobile {
   display: none;
+}
+.m-header {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+}
+.m-nav {
+  
+}
+.m-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #888;
+  text-align: center;
+  border: 1px solid #FFF;
+}
+.m-nav li {
+  display: block;
+  font-size: 1.2500em;
+  height: 20.0vw; /* ~50px */
+  width: auto;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+}
+.m-nav li a {
+  display: block;
+  color: #ff99ff;
+  padding: .5em 1em;
+  text-align: center;
+  background-color: #222;
+  text-decoration: none;
+}
+a.active {
+  background-color: #f0f;
+  color: #000;
 }
 /* Mobile index page-----------------------------------------------------------*/
 
