@@ -1,4 +1,7 @@
-/*All pages------------------------------------------*/
+/*All Wide-Screen pages--------------------------------------------------------------------------------------------*/
+.wide-screen{
+  display: block;
+}
 html {
   box-sizing: border-box;
   padding: 1vw;
@@ -13,12 +16,16 @@ header {
   text-align: center;
   background-color: #111;
 }
-.header {
+.ws-header {
   margin-left: auto;
   margin-right: auto;
   object-fit: contain;
   display: block;
-  max-width: 85vw;
+  width: 85vw;
+  height: auto;
+}
+.m-header {
+  width: 100vw;
   height: auto;
 }
 nav {
@@ -29,7 +36,7 @@ nav .logo {
   margin-bottom: auto;
   display: block;
   text-align: center;
-  max-height: 2.350vw;
+  height: 2.350vw;
   width: auto;
   text-decoration: none;
   object-fit: contain;
@@ -89,14 +96,14 @@ footer p {
   background-color: #333;
   border: 2px double #444
 }
-/*index page------------------------------------------*/
+/*Wide-Screen index page------------------------------------------*/
 #welcome {
   text-align: center;
   font-size: 1.8750em; /* ~30px */
 }
-/*news page------------------------------------------*/
+/*Wide-Screen news page------------------------------------------*/
 
-/*about page------------------------------------------*/
+/*Wide-Screen about page------------------------------------------*/
 .aboutmain {
   font-size: 1.0500em;
 }
@@ -104,7 +111,7 @@ footer p {
   font-size: 1.0500em;
   list-style-type: none;
 }
-/*projects page------------------------------------------*/
+/*Wide-Screen projects page------------------------------------------*/
 #project-page-selector {
   text-align: center;
   font-size: 2.0000em;
@@ -149,7 +156,7 @@ footer p {
 .project-entry {
 
 }
-/*contact page------------------------------------------*/
+/*Wide-Screen contact page------------------------------------------*/
 #contact {
   text-align: center;
 }
@@ -158,18 +165,29 @@ footer p {
   color: #1ad1ff;
 }
 .map {
-  border: 0.9000vw solid #ff55ff; /* ~5px */
+  border: 0.35vw solid #ff55ff; /* ~5px */
   width: 45vw; 
   height: 45vw; 
   loading: lazy;
   referrerpolicy: no-referrer-when-downgrade;
 }
-/* Wide-Screen Display---------------------------------------------------------*/
-.wide-screen{
-  display: block;
-}
-/* Mobile Display--------------------------------------------------------------*/
+
+
+
+
+/* All Mobile pages-------------------------------------------------------------------------------------------------------------------------------------*/
 .mobile {
   display: none;
 }
+/* Mobile index page-----------------------------------------------------------*/
+
+/* Mobile news page------------------------------------------------------------*/
+
+/* Mobile about page-----------------------------------------------------------*/
+
+/* Mobile projects page--------------------------------------------------------*/
+
+/* Mobile contact page---------------------------------------------------------*/
+
+
 
