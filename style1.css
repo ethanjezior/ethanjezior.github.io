@@ -27,7 +27,7 @@ header {
 .ws-nav {
   margin: 0.4629vw 0.2602vw; /* ~5px, ~5px */
 }
-.ws-nav .logo {
+.logo {
   margin-top: auto;
   margin-bottom: auto;
   display: block;
