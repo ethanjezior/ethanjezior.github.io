@@ -117,10 +117,14 @@ footer p {
 #project-page-caption {
   text-align: center;
 }
-.projects-body ul li, .projects-body ul li a {
-  list-style-type: none;
+.projects-body ul li {
   display: inline-block;
+}
+.projects-body ul li a {
+  list-style-type: none;
+  display: block;
   text-align: center;
+  text-decoration: none;
 }
 .project-nav {
   text-decoration: none;
@@ -131,26 +135,31 @@ footer p {
   color: #2eb82e;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
 }
 .project-nav .java-script, #java-script {
   color: #00e6e6;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
 }
 .project-nav .html-css, #html-css {
   color: #005ce6;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
 }
 .project-nav .c-sharp, #c-sharp {
   color: #8c1aff;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
 }
 .project-nav .c-plus-plus, #c-plus-plus {
   color: #ff8c1a;
   text-align: center;
   text-decoration: none;
+  list-style-type: none;
 }
 .projects {
 
