@@ -5,12 +5,13 @@
 .m-header {
   width: 100vw;
   height: auto;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
 }
-.m-nav {
+nav .mobile {
   
 }
-.m-nav ul {
+nav .mobile ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@
   text-align: center;
   border: 1px solid #FFF;
 }
-.m-nav li {
+nav .mobile li {
   display: block;
   font-size: 1.2500em;
   height: 20.0vw; /* ~50px */
@@ -27,7 +28,7 @@
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
 }
-.m-nav li a {
+nav .mobile li a {
   display: block;
   color: #ff99ff;
   padding: .5em 1em;
@@ -38,6 +39,10 @@
 a.active {
   background-color: #f0f;
   color: #000;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 /* Mobile index page-----------------------------------------------------------*/
 
@@ -62,7 +67,7 @@ html {
   overflow-x: hidden;
   background-color: #444;
 }
-header {
+header .wide-screen {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -76,7 +81,7 @@ header {
   width: 65vw;
   height: auto;
 }
-.ws-nav {
+nav .wide-screen {
   margin: 0.4629vw 0.2602vw; /* ~5px, ~5px */
 }
 .logo {
@@ -89,7 +94,7 @@ header {
   text-decoration: none;
   object-fit: contain;
 }
-.ws-nav ul {
+.wide-screen ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -98,7 +103,7 @@ header {
   text-align: center;
   border: 1px solid #FFF;
 }
-.ws-nav li {
+.wide-screen li {
   display: inline-block;
   font-size: 1.2500em;
   max-height: 21.6vw; /* ~50px */
@@ -107,21 +112,13 @@ header {
   font-weight: bold;
   list-style-type: none;
 }
-.ws-nav li a {
+.wide-screen li a {
   display: block;
   color: #ff99ff;
   padding: .5em 1em;
   text-align: center;
   background-color: #222;
   text-decoration: none;
-}
-a.active {
-  background-color: #f0f;
-  color: #000;
-}
-.ws-nav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
 }
 main {
   min-height: 65vh;
@@ -178,7 +175,7 @@ ul li a {
   text-align: center;
   text-decoration: none;
 }
-#project-nav li a {
+.wide-screen .project-nav li a {
   text-decoration: none;
   text-align: center;
   list-style-type: none;
@@ -187,7 +184,6 @@ ul li a {
   color: #2eb82e;
   text-align: center;
   text-decoration: none;
-  
 }
 .java-script, #java-script {
   color: #00e6e6;
