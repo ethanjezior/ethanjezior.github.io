@@ -11,11 +11,13 @@
         <link rel="stylesheet" href="style1.css">
     </head>
     
-    <body id="projects-body"> 
-	<!-- Wide-Screen Display -->
+    <body> 
 	<header class="wide-screen">
             <img  class="ws-header" src="header.png" alt="header">
         </header>
+	<header class="mobile">
+            <a href="index.html"><img  class="mobile" src="header.png" alt="header"></a>
+    	</header>
     	<nav class="wide-screen">
     		<ul>
 			<li><img class="logo" src="logo.png" alt="logo"></li>
@@ -27,7 +29,18 @@
 			<li><img class="logo" src="logo.png" alt="logo"></li>
     		</ul>
 	</nav>
-	<main class="wide-screen">
+	<nav class="mobile">
+        	<ul>
+			<li><img class="logo" src="logo.png" alt="logo"></li>
+			<li><a href="index.html">Home</a></li>
+        		<li><a href="news.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+        		<li><a class="active" href="projects.html">Projects</a></li>
+        		<li><a href="contact.html">Contact</a></li>
+			<li><img class="logo" src="logo.png" alt="logo"></li>
+        	</ul>
+        </nav>
+	<main>
         	<p id="project-page-selector">Projects</p>
 		<p id="project-page-caption">
 			Which projects would you like to view?
@@ -35,7 +48,14 @@
 		
 		<hr class="break">
 		
-		<ul id="project-nav">
+		<ul class="wide-screen project-nav">
+			<li><a class="java" href="#java"><h3> Java </h3></a></li>
+			<li><a class="java-script" href="#java-script"><h3> Java-Script </h3></a></li>
+			<li><a class="html-css" href="#html-css"><h3> HTML/CSS </h3></a></li>
+			<li><a class="c-sharp" href="#c-sharp"><h3> C# </h3></a></li>
+			<li><a class="c-plus-plus" href="#c-plus-plus"><h3> C++ </h3></a></li>
+		</ul>
+		<ul class="mobile project-nav">
 			<li><a class="java" href="#java"><h3> Java </h3></a></li>
 			<li><a class="java-script" href="#java-script"><h3> Java-Script </h3></a></li>
 			<li><a class="html-css" href="#html-css"><h3> HTML/CSS </h3></a></li>
@@ -64,34 +84,13 @@
 		<h2 id="c-plus-plus">C++ Projects</h2>
 		
         </main>
-	<footer class="wide-screen">
-            <p>
-                &copy; Copyright 2023. All Rights Reserved.
-            </p>
-        </footer>
-	    
-	<!-- Mobile Display -->
-	<header class="mobile">
-            <img  class="mobile m-header" src="header.png" alt="header">
-    	</header>
-	<nav class="mobile m-nav">
-            <ul>
-		<li><img class="logo" src="logo.png" alt="logo"></li>
-		<li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-		<li><a href="about.html">About</a></li>
-                <li><a class="active" href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-		<li><img class="logo" src="logo.png" alt="logo"></li>
-            </ul>
-        </nav>
-        <main class="mobile">
-		
-	</main>
-        <footer class="mobile">
-            <p>
-                &copy; Copyright 2023. All Rights Reserved.
-            </p>
+	<footer>
+        	<p class="wide-screen">
+        		&copy; Copyright 2023. All Rights Reserved.
+        	</p>
+		<p class="mobile">
+			&copy; Copyright 2023. All Rights Reserved.
+		</p>
         </footer>
     </body>
 
