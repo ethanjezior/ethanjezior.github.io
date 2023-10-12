@@ -153,11 +153,16 @@ footer p {
 
 /*Wide-Screen about page------------------------------------------*/
 .aboutmain {
-  font-size: 1.0500em;
+  font-size: 0.85em;
+  list-style-type: circle;
+  border: none;
+  background-color: #000;
 }
 .animain {
-  font-size: 1.0500em;
+  font-size: 0.85m;
   list-style-type: none;
+  border: none;
+  background-color: #000;
 }
 /*Wide-Screen projects page------------------------------------------*/
 #project-page-selector {
