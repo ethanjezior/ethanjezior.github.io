@@ -80,6 +80,7 @@ header .wide-screen {
   display: block;
   width: 65vw;
   height: auto;
+  background-color: #111;
 }
 nav .wide-screen {
   margin: 0.4629vw 0.2602vw; /* ~5px, ~5px */
@@ -122,6 +123,7 @@ nav .wide-screen {
 }
 main {
   min-height: 65vh;
+  min-width: 90vw;
   background-color: #000;
   border: 1px solid #f0f;
   color: #FFF;
