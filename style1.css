@@ -194,7 +194,6 @@ ul li a {
   display: block;
   text-align: center;
   text-decoration: none;
-  background-color: #000;
 }
 .wide-screen .project-nav li a {
   text-decoration: none;
@@ -203,26 +202,31 @@ ul li a {
 }
 .java, #java {
   color: #2eb82e;
+  background: #000;
   text-align: center;
   text-decoration: none;
 }
 .java-script, #java-script {
   color: #00e6e6;
+  background: #000;
   text-align: center;
   text-decoration: none;
 }
 .html-css, #html-css {
   color: #005ce6;
+  background: #000;
   text-align: center;
   text-decoration: none;
 }
 .c-sharp, #c-sharp {
   color: #8c1aff;
+  background: #000;
   text-align: center;
   text-decoration: none;
 }
 .c-plus-plus, #c-plus-plus {
   color: #ff8c1a;
+  background: #000;
   text-align: center;
   text-decoration: none;
 }
