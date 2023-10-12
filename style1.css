@@ -157,12 +157,19 @@ footer p {
   list-style-type: circle;
   border: none;
   background-color: #000;
+  text-decoration: none;
+}
+.indent{
+  background-color: #000;
+  border: none;
+  text-decoration: none;
 }
 .animain {
   font-size: 0.85m;
   list-style-type: none;
   border: none;
   background-color: #000;
+  text-decoration: none;
 }
 /*Wide-Screen projects page------------------------------------------*/
 #project-page-selector {
