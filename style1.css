@@ -44,10 +44,6 @@ li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-a.active {
-  background-color: #f0f;
-  color: #000;
-}
 /* Mobile index page-----------------------------------------------------------*/
 
 /* Mobile news page------------------------------------------------------------*/
@@ -124,6 +120,10 @@ nav .wide-screen {
   text-align: center;
   background-color: #222;
   text-decoration: none;
+}
+a.active {
+  background-color: #f0f;
+  color: #000;
 }
 main {
   min-height: 65vh;
