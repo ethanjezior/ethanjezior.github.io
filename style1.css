@@ -170,12 +170,15 @@ footer p {
 }
 ul li {
   display: inline-block;
+  text-align: center;
+  background-color: #000;
 }
 ul li a {
   list-style-type: none;
   display: block;
   text-align: center;
   text-decoration: none;
+  background-color: #000;
 }
 .wide-screen .project-nav li a {
   text-decoration: none;
