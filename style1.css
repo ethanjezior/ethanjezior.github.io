@@ -1,148 +1,68 @@
-/* All Mobile pages-------------------------------------------------------------------------------------------------------------------------------------*/
-.mobile {
-  display: block;
-}
-.m-header {
-  width: 100vw;
-  height: auto;
-  position: sticky;
-  position: -webkit-sticky;
-}
-nav .mobile {
-  
-}
-nav .mobile ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #888;
-  text-align: center;
-  border: 1px solid #FFF;
-}
-nav .mobile li {
-  display: block;
-  font-size: 1.2500em;
-  height: 20.0vw; /* ~50px */
-  width: auto;
-  font-family: Verdana, Arial, sans-serif;
-  font-weight: bold;
-}
-nav .mobile li a {
-  display: block;
-  color: #ff99ff;
-  padding: .5em 1em;
-  text-align: center;
-  background-color: #222;
-  text-decoration: none;
-}
-a.active {
-  background-color: #f0f;
-  color: #000;
-}
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-/* Mobile index page-----------------------------------------------------------*/
-
-/* Mobile news page------------------------------------------------------------*/
-
-/* Mobile about page-----------------------------------------------------------*/
-
-/* Mobile projects page--------------------------------------------------------*/
-
-/* Mobile contact page---------------------------------------------------------*/
-
-
-  
-/*All Wide-Screen pages--------------------------------------------------------------------------------------------*/
-.wide-screen {
-  display: none;
-}
+/* All pages---------------------------------------------------------------*/
 html {
+  overflow-x: hidden;
   box-sizing: border-box;
-  padding: 0.5vw;
-  margin: 1vh 0.8vw;
-  border: 1px solid #f0f;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
   background-color: #444;
 }
-header {
-  box-sizing: border-box;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #111;
-  border: 1px solid #f0f;
-}
-.header {
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
-  display: block;
-  width: 45vw;
-  height: auto;
-  background-color: #111;
+header, .header {
+  background-color: #000;
 }
 nav {
   box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0.4629vw auto; /* ~5px, ~5px */
-  width: 90vw;
+  margin-left: 0;
+  margin-right: 0;
+  margin: .35vw auto; /* ~5px, ~5px */
+  width: 100vw;
 }
 .logo {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: inline-block;
-  text-align: center;
-  height: 2.350vw;
-  width: 2.350vw;
-  text-decoration: none;
-  object-fit: contain;
+  display: none;
 }
 nav ul {
-  height: 5vh;
+  height: 30vw;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #888;
   text-align: center;
   border: 1px solid #FFF;
 }
 nav li {
-  display: inline-block;
-  font-size: 1.2500em;
-  width: 7vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 15vh;
+  width: 99vw;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
   list-style-type: none;
+  border: 1px solid #fff;
 }
 nav ul li a {
   color: #ff99ff;
-  padding: .5em 1em;
   text-align: center;
   background-color: #222;
   text-decoration: none;
 }
-a.active {
-  background-color: #f0f;
-  color: #000;
-}
 main {
   box-sizing: border-box;
-  min-height: 65vh;
-  width: 90vw;
+  min-height: 60vh;
+  width: 95vw;
   background-color: #000;
   border: 1px solid #f0f;
   color: #FFF;
   display: block;
   font-size: 1.2500em;
-  padding: 0.2600vw 0.4630vw; /* ~5px*/
-  margin: 0.4629vw auto; /* ~5px, ~3px*/
+  padding: 2vw 0.4630vw; /* ~5px*/
+  margin: 1vh 0 0.4629vw 0; /* ~5px, ~3px*/
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
 }
 .break {
   max-width: 80vw;
@@ -152,18 +72,16 @@ main {
 }
 footer p {
   margin: 0.4629vw 0.1613vw; /* ~5px, ~3px*/
-  color:#ff99ff
-  background-color: #333;
-  border: 2px double #444
+  color:#000;
 }
-/*Wide-Screen index page------------------------------------------*/
+/*index page------------------------------------------*/
 #welcome {
   text-align: center;
   font-size: 1.8750em; /* ~30px */
 }
-/*Wide-Screen news page------------------------------------------*/
+/*news page------------------------------------------*/
 
-/*Wide-Screen about page------------------------------------------*/
+/*about page------------------------------------------*/
 #aboutmain {
   min-height: 90vh;
 }
@@ -194,13 +112,14 @@ li .animain, .animain {
   background-color: #000;
   text-decoration: none;
 }
-/*Wide-Screen projects page------------------------------------------*/
+/*projects page------------------------------------------*/
 #project-page-selector {
   text-align: center;
-  font-size: 2.00em;
+  font-size: 3.5vw;
   text-decoration-line: underline;
 }
 #project-page-caption {
+  font-size: 1.35vw;
   text-align: center;
 }
 #projectsbody ul li {
@@ -220,49 +139,57 @@ ul li a {
   text-align: center;
 }
 .project-nav li a {
-  font-size: 1.25em;
-  padding: 0 5vw;
+  font-size: 1.7vw;
+  padding: 0 3vw;
   text-decoration: none;
   text-align: center;
   list-style-type: none;
 }
 .java, #java {
+  font-size: 2.4vw;
   color: #2eb82e;
   background: #000;
   text-align: center;
   text-decoration: none;
 }
 .java-script, #java-script {
+  font-size: 2.4vw;
   color: #00e6e6;
   background: #000;
   text-align: center;
   text-decoration: none;
 }
 .html-css, #html-css {
+  font-size: 2.4vw;
   color: #005ce6;
   background: #000;
   text-align: center;
   text-decoration: none;
 }
 .c-sharp, #c-sharp {
+  font-size: 2.4vw;
   color: #8c1aff;
   background: #000;
   text-align: center;
   text-decoration: none;
 }
 .c-plus-plus, #c-plus-plus {
+  font-size: 2.4vw;
   color: #ff8c1a;
   background: #000;
   text-align: center;
   text-decoration: none;
 }
 .projects {
-
+ width: 80vw;
+ height: 10vw;
 }
 .project-entry {
-
+  width: 80vw;
+  height: 80vw;
 }
-/*Wide-Screen contact page------------------------------------------*/
+
+/*contact page------------------------------------------*/
 #contact {
   text-align: center;
 }
@@ -274,14 +201,45 @@ ul li a {
   border: 0.25vw solid #ff55ff; /* ~5px */
   width: 45vw; 
   height: 35vw; 
-  /* 
-  loading: lazy;
-  referrerpolicy: no-referrer-when-downgrade; 
-  */
+}
+  
+
+/* Media Queries and Viewport Formatting -------------------------------------*/
+
+/* Show Mobile Class, hide Tablet-Desktop Class */
+.mobile {
+  display: block;
+}
+.wide-screen {
+  display: none;
 }
 
-/* Media Query for Widescreen Viewport */
-@media screen and (min-width: 630px){
+/* Media Query for Tablet Viewport */
+@media screen and (max-width: 629px), print{
+  .header{
+    box-sizing: border-box;
+    clear: both;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    position: -webkit-fixed;
+    position: fixed;
+    margin-bottom: 0;
+  }
+  .logo {
+    display: none;
+  }
+  nav #navButton{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #f0f;
+  }
+  main{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 630px), print{
   /* Widescreen Viewport: Show widescreen class,
   hide mobile class */
   .wide-screen{
@@ -290,12 +248,250 @@ ul li a {
   .mobile{
     display: none;
   }
+
+  /*All Wide-Screen pages--------------------------------------------------------------------------------------------*/
+  html {
+    border: 1px solid #f0f;
+    min-height: 98vh;
+  }
+  header {
+    box-sizing: border-box;
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #111;
+    border: 1px solid #f0f;
+  }
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    display: block;
+    width: 45vw;
+    height: auto;
+    background-color: #111;
+  }
+  nav {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0.4629vw auto; /* ~5px, ~5px */
+    width: 90vw;
+  }
+  .logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    text-align: center;
+    height: 2.350vw;
+    width: 2.350vw;
+    text-decoration: none;
+    object-fit: contain;
+  }
+  nav ul {
+    height: 5vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #888;
+    text-align: center;
+    border: 1px solid #FFF;
+  }
+  nav li {
+    display: inline-block;
+    font-size: 1.125vw;
+    width: 7vw;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  nav ul li a {
+    color: #ff99ff;
+    padding: .5em 1em;
+    text-align: center;
+    background-color: #222;
+    text-decoration: none;
+  }
+  a.active {
+    background-color: #f0f;
+    color: #000;
+  }
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  main {
+    box-sizing: border-box;
+    min-height: 70vh;
+    width: 90vw;
+    background-color: #000;
+    border: 1px solid #f0f;
+    color: #FFF;
+    display: block;
+    font-size: 1.2500em;
+    padding: 0.2600vw 0.4630vw; /* ~5px*/
+    margin: 0.4629vw auto; /* ~5px, ~3px*/
+  }
+  .break {
+    max-width: 80vw;
+  }
+  .indent {
+    text-indent: 0.7813vw; /* ~15px */
+  }
+  footer p {
+    margin: 0.4629vw 0.1613vw 0.4629vw 0; /* ~5px, ~3px*/
+    color:#000;
+  }
+
+  /*Wide-Screen index page------------------------------------------*/
+  #welcome {
+    text-align: center;
+    font-size: 1.8750em; /* ~30px */
+  }
+
+  /*Wide-Screen news page------------------------------------------*/
+
+  /*Wide-Screen about page------------------------------------------*/
+  #aboutmain {
+    min-height: 90vh;
+  }
+  .clear{
+    float: left;
+    clear: left;
+    display: block;
+  }
+  li .aboutmain, .aboutmain {
+    float: left;
+    clear: left;
+    font-size: 1em;
+    border: none;
+    background-color: none;
+  }
+  .indent{
+    background-color: none;
+    border: none;
+    text-decoration: none;
+  }
+  li .animain, .animain {
+    float: left;
+    clear: left;
+    display: block;
+    font-size: 1em;
+    list-style-type: none;
+    border: none;
+    background-color: #000;
+    text-decoration: none;
+  }
+
+  /*Wide-Screen projects page------------------------------------------*/
+  #project-page-selector {
+    text-align: center;
+    font-size: 3.5vw;
+    text-decoration-line: underline;
+  }
+  #project-page-caption {
+    font-size: 1.35vw;
+    text-align: center;
+  }
+  #projectsbody ul li {
+    display: inline-block;
+    text-align: center;
+  }
+  ul li a {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .project-nav {
+    padding-right: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .project-nav li a {
+    font-size: 1.7vw;
+    padding: 0 3vw;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+  }
+  .java, #java {
+    font-size: 2.4vw;
+    color: #2eb82e;
+    background: #000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .java-script, #java-script {
+    font-size: 2.4vw;
+    color: #00e6e6;
+    background: #000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .html-css, #html-css {
+    font-size: 2.4vw;
+    color: #005ce6;
+    background: #000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .c-sharp, #c-sharp {
+    font-size: 2.4vw;
+    color: #8c1aff;
+    background: #000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .c-plus-plus, #c-plus-plus {
+    font-size: 2.4vw;
+    color: #ff8c1a;
+    background: #000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .projects {
+    width: 26vw;
+    height: 3vw;
+  }
+  .project-entry {
+    width: 26vw;
+    height: 26vw;
+  }
+
+  /*Wide-Screen contact page------------------------------------------*/
+  #contact {
+    text-align: center;
+  }
+  #contact a {
+    text-decoration: none;
+    color: #1ad1ff;
+  }
+  .map {
+    border: 0.25vw solid #ff55ff; /* ~5px */
+    width: 45vw; 
+    height: 35vw; 
+  }
 }
 
+/* Media Query for Desktop Viewport */
 @media screen and (min-width: 1015px), print{
   /* Desktop Viewport: */
+  html {
+    box-sizing: border-box;
+    padding: 0.5vw;
+    margin: 1vh 0.8vw;
+    border: 1px solid #f0f;
+    overflow-x: hidden;
+    background-color: #444;
+  }
 }
 
+/* Media Query for Large Desktop Viewport */
 @media screen and (min-width: 1921px), print{
   #container{
     width: 1920px;
@@ -303,6 +499,7 @@ ul li a {
   }
 }
 
+/* Media Query for Print */
 @media print{
   body{
     background: #fff;
