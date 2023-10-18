@@ -15,10 +15,13 @@ header, .header {
 }
 nav {
   box-sizing: border-box;
-  margin-left: 0;
-  margin-right: 0;
-  margin: .35vw auto; /* ~5px, ~5px */
+  margin: 0; /* ~5px, ~5px */
   width: 100vw;
+  height: 30vw;
+}
+li img {
+  display: none;
+  height: 0;
 }
 .logo {
   display: none;
@@ -26,6 +29,7 @@ nav {
 nav ul {
   height: 30vw;
   list-style-type: none;
+  background-color: #222;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -33,33 +37,38 @@ nav ul {
   border: 1px solid #FFF;
 }
 nav li {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
   display: block;
   height: 15vh;
-  width: 99vw;
+  width: 100vw;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
   list-style-type: none;
-  border: 1px solid #fff;
 }
 nav ul li a {
   color: #ff99ff;
+  float: top;
+  font-size: 5vh;
   text-align: center;
-  background-color: #222;
   text-decoration: none;
+  border: 1px solid #fff;
+}
+.hide {
+  height: 0;
 }
 main {
+  clear: both;
   box-sizing: border-box;
   min-height: 60vh;
-  width: 95vw;
+  width: 100vw;
   background-color: #000;
   border: 1px solid #f0f;
   color: #FFF;
   display: block;
   font-size: 1.2500em;
   padding: 2vw 0.4630vw; /* ~5px*/
-  margin: 1vh 0 0.4629vw 0; /* ~5px, ~3px*/
+  margin: 1vh 0; /* ~5px, ~3px*/
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
@@ -314,6 +323,7 @@ ul li a {
     text-align: center;
     background-color: #222;
     text-decoration: none;
+    border: none;
   }
   a.active {
     background-color: #f0f;
