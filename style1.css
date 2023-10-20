@@ -9,7 +9,7 @@ html body, header, nav, main, footer, div, img, ul {
 html {
   box-sizing: border-box;
   min-height: 100vh;
-  width: 100vw;
+  max-width: 99vw;
   background-color: #444;
   overflow-x: hidden;
 }
@@ -229,6 +229,7 @@ ul li a {
   header{
     top: 0;
     margin-top: 0;
+    float:inherit;
   }
   .header{
     top: 0;
@@ -246,12 +247,14 @@ ul li a {
     padding: 0;
     margin: 3vh 0 0 0;
     font-size: 8vh;
-
   }
   .navButton{
     color: #000;
     background-color: #fff;
     border: 1px solid #f0f;
+  }
+  nav{
+    clear: both;
   }
   nav li:first-child{
     border-top: 1px solid #fff;
@@ -284,9 +287,10 @@ ul li a {
   /*All Wide-Screen pages--------------------------------------------------------------------------------------------*/
   html {
     box-sizing: border-box;
-    border: 1px solid #f0f;
     min-height: 98vh;
-    max-width: 100vw;
+    max-width: 99vw;
+    margin: 5px auto auto auto;
+    border: 1px solid #f0f;
   }
   header {
     box-sizing: border-box;
@@ -452,6 +456,9 @@ ul li a {
     margin-right: auto;
     text-align: center;
   }
+  .project-nav li {
+    display: inline-block;
+  }
   .project-nav li a {
     font-size: 1.7vw;
     padding: 0 3vw;
@@ -515,6 +522,13 @@ ul li a {
     border: 0.25vw solid #ff55ff; /* ~5px */
     width: 45vw; 
     height: 35vw; 
+  }
+}
+
+/* Media Query for Laptop Viewport */
+@media screen and (min-width: 630px) and (max-width: 1014px), print {
+  header {
+    margin-top: 1vh;
   }
 }
 
