@@ -5,6 +5,11 @@ html body, header, nav, main, footer, div, img, ul {
   border: 0;
 }
 
+/* Style rule for box-szing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
 /* All pages---------------------------------------------------------------*/
 html {
   box-sizing: border-box;
@@ -84,11 +89,32 @@ footer p {
   margin: 0.4629vw 0.1613vw; /* ~5px, ~3px*/
   color:#777;
 }
+.green{
+  border: 1px solid #2eb82e;
+}
+.light-blue{
+  border: 1px solid #00e6e6;
+}
+.blue{
+  border: 1px solid #005ce6;
+}
+.purple{
+  border: 1px solid #8c1aff;
+}
+.orange{
+  border: 1px solid #ff8c1a;
+}
+.row{
+  width: 100vw;
+  min-height: 25vh;
+}
+
 /*index page------------------------------------------*/
 #welcome {
   text-align: center;
   font-size: 1.8750em; /* ~30px */
 }
+
 /*news page------------------------------------------*/
 
 /*about page------------------------------------------*/
@@ -196,7 +222,7 @@ ul li a {
 }
 .project-entry {
   width: 80vw;
-  height: 80vw;
+  height: auto;
 }
 
 /*contact page------------------------------------------*/
@@ -502,12 +528,19 @@ ul li a {
     text-decoration: none;
   }
   .projects {
-    width: 26vw;
-    height: 3vw;
+    display: inline-block;
+    width: 100vw;
+    height: 10vh;
   }
   .project-entry {
-    width: 26vw;
-    height: 26vw;
+    display: inline-block;
+    width: 20vw;
+    height: 25vh;
+  }
+  .row{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
   }
 
   /*Wide-Screen contact page------------------------------------------*/

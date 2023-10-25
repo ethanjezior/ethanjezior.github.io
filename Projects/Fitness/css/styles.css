@@ -1,0 +1,251 @@
+/*
+Author: Ethan Jezior
+Date: September 21, 2023
+*/
+body, header, nav, main, footer, h1, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background-color: #000;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+image{
+	max-width: 100%;
+	display: block;
+}
+
+/* Style Rules for Mobile Viewport */
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 190px;
+}
+header img{
+	margin: 0 auto;
+}
+nav{
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+/*css reset*/
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #fff;
+}
+nav li:first-child{
+	border-top: none;
+}
+nav li a{
+	display: block;
+	color: #fff;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+main{
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+}
+.tel-link{
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel-link a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+.hours{
+	margin-left: 10%;
+}
+.action{
+	font-size: 1.35em;
+	color: #660;
+	font-weight: bold;
+}
+.external-link{
+	color: #660;
+	font-weight: bold;
+	text-decoration: none;
+}
+#weights, #cardio, #training{
+	margin: 0 2%;
+}
+.round{
+	border-radius: 8px;
+}
+#contact{
+	text-align: center;
+}
+#contact .contact-email-link{
+	text-decoration: none;
+	color: #660; /*666600*/
+}
+
+.map{
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
+/* Show Mobile class, hide tablet-desktop class*/
+.mobile{
+	display: block;
+}
+.tablet-desktop{
+	display: none;
+}
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print{
+	/* Tablet Viewport: Show tablet-desktop class,
+	hide mobile class */
+	.tablet-desktop{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+
+	/* Tablet Viewport: header */
+	header{
+		position: static;
+		padding-bottom: 2%;
+	}
+
+	/* Tablet viewport: nav */
+	nav li{
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	nav li:last-child{
+		border-right: none;
+	}
+	nav li a{
+		padding: .1em .75em;
+	}
+
+	/* Tablet Viewport: main */
+	main ul{
+		margin: 0 0 4% 10%;
+	}
+	#excercises{
+		clear: left;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background-color: #f2f2f2;
+		padding: 1% 2%;
+		background: linear-gradient(to right,#ccc, #fff);
+	}
+	#exercises dt{
+		font-weight: bold;
+	}
+	#exercises dd{
+		padding: .5% 1% 2% 0;
+	}
+	
+	.tel-num{
+		font-size: 1.25em;
+	}
+	.map{
+		width: 600px;
+		height: 450px;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print{
+	/* Desktop Viewport: header */
+	header{
+		float: left;
+		width: 25%;
+		padding-bottom: 0;
+	}
+
+	/* Desktop Viewport: nav */
+	nav{
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+	nav ul{
+		text-align: right;
+
+	}
+	nav li{
+		border: none;
+	}
+	nav li a{
+		padding: .5em 1em;
+	}
+	/* 
+	Pseudo-classes:display:
+	:link unvisited
+	:visited been clicked
+	:hover mouse over it
+	:active moment when clicked
+	*/
+	nav li a:hover{
+		color: #000;
+		background-color: #fff;
+	}
+	main{
+		clear: left;
+	}
+	main h1{
+		font-size: 1.8em;
+	}
+	#weights, #cardio, #training{
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+	}
+	#exercises{
+		clear: left;
+	}
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px), print{
+	#container{
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+/* Media Query for Print */
+@media print{
+	body{
+		background: #fff;
+		color: #000;
+	}
+}
+footer p{
+	font-size: .75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+footer p a{
+	color: #fff;
+	text-decoration: none;
+}
