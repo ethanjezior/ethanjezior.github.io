@@ -76,6 +76,7 @@ main {
   font-size: 1.2500em;
   margin: 1vw auto; /* ~5px, ~3px*/
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .break {
   max-width: 80vw;
@@ -90,19 +91,19 @@ footer p {
   color:#777;
 }
 .green{
-  border: 1px solid #2eb82e;
+  border: 2px solid #2eb82e;
 }
 .light-blue{
-  border: 1px solid #00e6e6;
+  border: 2px solid #00e6e6;
 }
 .blue{
-  border: 1px solid #005ce6;
+  border: 2px solid #005ce6;
 }
 .purple{
-  border: 1px solid #8c1aff;
+  border: 2px solid #8c1aff;
 }
 .orange{
-  border: 1px solid #ff8c1a;
+  border: 2px solid #ff8c1a;
 }
 .row{
   width: 100vw;
@@ -544,6 +545,7 @@ ul li a {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 20px;
+      padding-bottom: 2%;
   }
   figcaption{
     color: #000;
