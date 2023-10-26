@@ -1,0 +1,92 @@
+/* 
+Style sheet created by: 
+Ethan Jezior
+10/26/23 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+	background-color: #e4f1f6;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Style Rules for Mobile Viewport */
+
+
+
+/* Style Rules to Hide tablet-desk Class */
+.tablet-desk{
+    display: none;
+}
+
+/* Style rule for header */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	text-align: center;
+    padding: 3%;
+    color: #092834;
+    margin-top: 5%;
+}
+
+/* Style rules for nav */
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+	padding: 1%;
+    margin-bottom: 1%;
+    background-color: #67afcb;
+    top: 0;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 1.5em;
+    padding: 4%;
+    display: inline-block;
+    font-family: 'B612', sans-serif;
+}
+
+nav li a {
+    display: block;
+    color: #092834;
+    text-decoration: none;
+}
+
+/* Style rules for main content  */
+main {
+	display: block;
+	margin: 1% 1% 15%;
+	padding: 1%;
+    font-size: 1.5em;
+    font-family: 'Crimson Text', serif;
+}
+.corner{
+    border-radius: 12px;
+}
+
+#image {
+    margin-bottom: 1%;
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
