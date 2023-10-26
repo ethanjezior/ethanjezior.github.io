@@ -1,0 +1,106 @@
+/* 
+Ethan Jezior
+styles.css
+9/26/23
+*/
+
+/* List Reset */
+body, header, nav, main, footer, img, h1, h3 {
+	margin: 0;
+	padding: 0;
+	borders: 0;
+}
+
+/* Style Rule for Body and Image */
+body {
+	background-color: #e3eaf8;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Style Rule for Header Content */
+h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: Georgia, Times, Serif;
+	padding: 3%;
+	color: #101a2d;
+}
+
+/* Style Rules for Navigation Area */
+nav, nav ul, nav li, nav li a {
+	background-color: #1d396d;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+}
+
+nav li a {
+	display: block;
+	color: #e3eaf8;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+/* Style Rules for Main Content */
+main {
+	padding: 2%;
+	font-family: Geneva, Arial, sans-serif;
+	overflow: auto;
+}
+
+main p {
+	font-size: 1.25em;
+}
+
+main h3 {
+	padding: 2% 0 0 0;
+	font-size: 2em;
+}
+
+#image {
+	width: 45%;
+	float: left;
+	padding: 1%;
+}
+
+#group {
+	width: 45%;
+	float: right;
+}
+
+.external {
+	color: #1d396d;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Style Rules for Footer Content */
+footer {
+	text-align: center;
+	font-size: 0.85em;
+	background-color: #1d396d;
+	color: #e3eaf8;
+	padding: 1% 0%;
+}
+
+footer a {
+	color: #e3eaf8;
+	text-decoration: none;
+}
+
+
