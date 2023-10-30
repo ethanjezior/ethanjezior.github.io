@@ -76,7 +76,12 @@ main {
   font-size: 1.2500em;
   margin: 1vw auto; /* ~5px, ~3px*/
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+main::-webkit-scrollbar {
+  display: none;
 }
 .break {
   max-width: 80vw;
@@ -104,10 +109,6 @@ footer p {
 }
 .orange{
   border: 2px solid #ff8c1a;
-}
-.row{
-  width: 100vw;
-  min-height: 25vh;
 }
 
 /*index page------------------------------------------*/
@@ -188,6 +189,7 @@ ul li a {
   background: #000;
   text-align: center;
   text-decoration: none;
+  clear: both;
 }
 .java-script, #java-script {
   font-size: 7vw;
@@ -216,14 +218,26 @@ ul li a {
   background: #000;
   text-align: center;
   text-decoration: none;
+  
 }
 .projects {
  width: 80vw;
  height: 10vw;
+ display: block;
 }
 .project-entry {
   width: 80vw;
   height: auto;
+  display: block;
+  text-align: center;
+}
+.row {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  padding-bottom: 5%;
+  width: 100vw;
+  height: 25vh;
 }
 
 /*contact page------------------------------------------*/
@@ -337,23 +351,25 @@ ul li a {
     height: auto;
     background-color: #111;
   }
-  nav {
+  nav, nav ul, nav ul li, nav ul li a{
     box-sizing: border-box;
-    margin: 0.25vw auto 1.25vw auto; /* ~5px, ~5px */
-    padding: 0;    
+    list-style-type: none;
+  }
+  nav ul, nav ul li, nav ul li.logo, nav ul li a{
+    height: 100%;
+    object-fit: fill;
+    text-align: center;
+  }
+  nav ul, nav ul li, nav ul li.logo{
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    margin: 0.25vw auto 1.3vw auto; /* ~5px, ~5px */
     width: 90vw;
     height: 3vh;
   }
-  .logo {
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-    height: 2.3vw;
-    width: 2.3vw;
-    object-fit: contain;
-  }
   nav ul {
-    box-sizing: border-box;
     height: 5vh;
     width: 90vw;
     list-style-type: none;
@@ -361,27 +377,27 @@ ul li a {
     padding: 0;
     overflow: hidden;
     background-color: #888;
-    text-align: center;
     border: 1px solid #FFF;
   }
   nav li {
-    box-sizing: border-box;
     display: inline-block;
     padding: 0;
+    margin: 0;
     width: 7vw;
-    height: 2.5vh;
-    margin: 0 auto;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
-    list-style-type: none;
+  }
+  .logo {
+    display: inline-block;
+    height: 3.5vh;
+    width: auto;
+    margin: 0;
   }
   nav ul li a {
-    box-sizing: border-box;
+    display: block;
     color: #ff99ff;
-    font-size: 1.125vw;
-    padding:  1vh 0.5vh;
-    text-align: center;
-    height: 4vh;
+    font-size: 1.25vw;
+    padding: 1.25vh 0.5vh;
     background-color: #222;
     text-decoration: none;
     border: none;
@@ -395,7 +411,6 @@ ul li a {
     color: white;
   }
   main {
-    box-sizing: border-box;
     min-height: 70vh;
     width: 90vw;
     background-color: #000;
@@ -403,8 +418,8 @@ ul li a {
     color: #FFF;
     display: block;
     font-size: 1.2500em;
-    padding: 0.2600vw 0.4630vw; /* ~5px*/
-    margin: 0.4629vw auto; /* ~5px, ~3px*/
+    padding: 0.2600vw 0.4630vw;
+    margin: 1vw auto;
   }
   .break {
     max-width: 80vw;
@@ -545,7 +560,7 @@ ul li a {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 20px;
-      padding-bottom: 2%;
+      padding-bottom: 14.5%;
   }
   figcaption{
     color: #000;
