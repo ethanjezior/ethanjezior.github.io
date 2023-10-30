@@ -1,0 +1,67 @@
+/*
+Author:
+Date:
+File Name: 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #c8dbE3;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 0.2em;
+	background-color: #183440;
+	color: #fff;
+	padding: 2%;
+}
+
+/* Style rules for nav area */
+nav {
+	background-color: #183440;
+	padding: 0.5%;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	color: #fff;
+	padding: 1% 3%;
+	text-decoration: none;
+}
+
+/* Style rules for main content  */
+main {
+	padding: 1em;
+	background-color: #fff;
+}
+
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 650px), print {
+    
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+
+    
+}
