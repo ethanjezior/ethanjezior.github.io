@@ -16,7 +16,11 @@
       <img class="header" src="images/header.png" alt="header">
     </header>
     <h3 class="mobile ee">hehehe</h3>
-    <nav>
+    <div class="disbtn mobile">
+      <button class="openbtn" onclick="openNav()">☰ Open Navigation</button>
+      <button class="closebtn" onclick="closeNav()" href="javascript:void(0)">☰ Close Navigation</button>
+    </div>
+    <nav class="sidebar mySidebar">
       <ul>
         <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
         <li><a class="active" href="index.html">Home</a></li>
@@ -27,6 +31,22 @@
         <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
       </ul>
     </nav>
+    <script>
+      function openNav() {
+        document.getElementsByClassName("mySidebar").style.height = "50vh";
+        document.getElementsByClassName("disbtn").style.marginTop = "50vh";
+        document.getElementsByClassName("closebtn").style.display = "block";
+        document.getElementsByClassName("openbtn").style.display = "none";
+        document.getElementsByTagName("nav").style.display = "block";
+      }
+      function closeNav() {
+        document.getElementsByClassName("mySidebar").style.height = "0";
+        document.getElementsByClassName("disbtn").style.marginTop = "0";
+        document.getElementsByClassName("openbtn").style.display = "block";
+        document.getElementsByClassName("closebtn").style.display = "none";
+        document.getElementsByTagName("nav").style.display = "none";
+      }
+    </script>
     <main>
       <p id="welcome">
         Welcome to my digital portfolio.

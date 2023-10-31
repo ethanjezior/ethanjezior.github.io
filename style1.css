@@ -1,5 +1,5 @@
 /* CSS Reset */
-html body, header, nav, main, footer, div, img, ul {
+html body, header, p, nav, main, footer, div, img, ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,6 +8,7 @@ html body, header, nav, main, footer, div, img, ul {
 /* Style rule for box-szing applies to all elements */
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* All pages---------------------------------------------------------------*/
@@ -16,49 +17,23 @@ html {
   min-height: 100vh;
   max-width: 99vw;
   background-color: #444;
-  overflow-x: hidden;
 }
 .header {
   box-sizing: border-box;
   background-color: #000;
   padding: 5px 0 3px 0;
 }
-nav {
-  width: 100vw;
-  height: 30vh;
-  padding: 0;
-  margin-bottom: 0;
-}
 .hidemobile {
   display: none;
   height: 0;
   width: 0;
 }
-nav ul {
-  box-sizing: border-box;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: #222;
-  overflow: hidden;
-  text-align: center;
-}
-nav li {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  display: block;
-  height: 6vh;
-  width: 100vw;
-  font-family: Verdana, Arial, sans-serif;
-  font-weight: bold;
-  list-style-type: none;
-}
+nav,
+nav ul,
+nav ul li,
 nav ul li a {
-  color: #ff99ff;
-  font-size: 5vh;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+  clear: both;
+  overflow-y: hidden;
 }
 .hide {
   height: 0;
@@ -74,8 +49,7 @@ main {
   color: #FFF;
   display: block;
   font-size: 1.2500em;
-  margin: 1vw auto; /* ~5px, ~3px*/
-  overflow-x: hidden;
+  margin: 1vw auto 0 auto;
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -86,13 +60,9 @@ main::-webkit-scrollbar {
 .break {
   max-width: 80vw;
 }
-.indent {
-  text-indent: 0.7813vw; /* ~15px */
-}
 footer p {
   text-align: center;
   position: static;
-  margin: 0.4629vw 0.1613vw; /* ~5px, ~3px*/
   color:#777;
 }
 .green{
@@ -113,6 +83,7 @@ footer p {
 
 /*index page------------------------------------------*/
 #welcome {
+  padding-top: 2%;
   text-align: center;
   font-size: 1.8750em; /* ~30px */
 }
@@ -122,16 +93,16 @@ footer p {
 /*about page------------------------------------------*/
 #aboutmain {
   min-height: 90vh;
+  white-space: normal;
 }
-.clear{
-  float: left;
-  clear: left;
-  display: block;
+.clear {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+  font-size: 3vh;
+  padding: 0;
 }
-li .aboutmain, .aboutmain {
-  float: left;
-  clear: left;
-  font-size: 1em;
+li .aboutmain, .aboutmain, li .animain, .animain{
   border: none;
   background-color: none;
 }
@@ -139,16 +110,10 @@ li .aboutmain, .aboutmain {
   background-color: none;
   border: none;
   text-decoration: none;
-}
-li .animain, .animain {
-  float: left;
-  clear: left;
-  display: block;
-  font-size: 1em;
-  list-style-type: none;
-  border: none;
-  background-color: #000;
-  text-decoration: none;
+  margin-left: 0;
+  margin-bottom: 2%;
+  padding-left: 2%;
+  left: 0;
 }
 /*projects page------------------------------------------*/
 #project-page-selector {
@@ -157,6 +122,7 @@ li .animain, .animain {
   text-decoration-line: underline;
 }
 #project-page-caption {
+  padding: 1% 0;
   font-size: 4vw;
   text-align: center;
 }
@@ -227,7 +193,7 @@ ul li a {
 }
 .project-entry {
   width: 80vw;
-  height: auto;
+  height: 8vh;
   display: block;
   text-align: center;
 }
@@ -289,13 +255,86 @@ ul li a {
     margin: 3vh 0 0 0;
     font-size: 8vh;
   }
-  .navButton{
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #f0f;
+  nav {
+    width: 100vw;
+    height: 30vh;
+    padding: 0;
+    margin-bottom: 0;
   }
-  nav{
-    clear: both;
+  nav ul {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    overflow: hidden;
+    text-align: center;
+  }
+  nav li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 6vh;
+    width: 100vw;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  nav ul li a {
+    color: #ff99ff;
+    font-size: 5vh;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+  nav {
+    display: none;
+  }
+  .sidebar{
+    width: 101vw;
+    height: 5.5vh;
+    position: fixed;
+    z-index: 1;
+    top: 8.5vh;
+    left: 0;
+    color: #fff;
+    background-color: #222;
+    border-top: 1px solid #f0f;
+    border-bottom: 1px solid #f0f;
+    font-size: 4vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .sidebar a{
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .closebtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    display: none;
+  }
+  .openbtn {
+    position: absolute;
+    top: 9%;
+    font-size: 4vh;
+    color: #fff;
+    background-color: #222;
+    border-top: 1px solid #f0f;
+    border-bottom: 1px solid #f0f;
+    width: 101vw;
+    height: 6vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .disbtn{
+    width: 101vw;
+    top: 5%;
+    transition: margin-top .5s;
   }
   nav li:first-child{
     border-top: 1px solid #fff;
@@ -306,7 +345,16 @@ ul li a {
     text-decoration: none;
   }
   main{
+    position:static;
     padding: 0 1vw;
+  }
+  li .aboutmain, .aboutmain, li .animain, .animain {
+    float: left;
+    clear: both;
+    font-size: 2vh;
+    border: none;
+    background-color: none;
+    padding-left: 5%;
   }
 }
 
@@ -365,9 +413,10 @@ ul li a {
     margin: 0;
   }
   nav {
-    margin: 0.25vw auto 1.3vw auto; /* ~5px, ~5px */
+    margin: 0.25vw auto 0vw auto; /* ~5px, ~5px */
     width: 90vw;
-    height: 3vh;
+    height: 4.3vh;
+    border: 1px solid #FFF;
   }
   nav ul {
     height: 5vh;
@@ -377,7 +426,6 @@ ul li a {
     padding: 0;
     overflow: hidden;
     background-color: #888;
-    border: 1px solid #FFF;
   }
   nav li {
     display: inline-block;
@@ -389,7 +437,7 @@ ul li a {
   }
   .logo {
     display: inline-block;
-    height: 3.5vh;
+    height: 2vh;
     width: auto;
     margin: 0;
   }
@@ -397,7 +445,7 @@ ul li a {
     display: block;
     color: #ff99ff;
     font-size: 1.25vw;
-    padding: 1.25vh 0.5vh;
+    padding: 0.6vh 0.5vh;
     background-color: #222;
     text-decoration: none;
     border: none;
@@ -419,13 +467,10 @@ ul li a {
     display: block;
     font-size: 1.2500em;
     padding: 0.2600vw 0.4630vw;
-    margin: 1vw auto;
+    margin: 0.5vh auto 1vw auto;
   }
   .break {
     max-width: 80vw;
-  }
-  .indent {
-    text-indent: 0.7813vw; /* ~15px */
   }
   footer p {
     margin: 0.4629vw 0.1613vw 0.4629vw 0; /* ~5px, ~3px*/
@@ -444,22 +489,22 @@ ul li a {
   #aboutmain {
     min-height: 90vh;
   }
-  .clear{
-    float: left;
-    clear: left;
-    display: block;
+  .clear {
+    clear: both;
+    display: inline-block;
   }
-  li .aboutmain, .aboutmain {
+    .aboutmain li, .aboutmain{
     float: left;
-    clear: left;
+    clear: both;
     font-size: 1em;
     border: none;
     background-color: none;
   }
-  .indent{
+  .indent {
     background-color: none;
     border: none;
     text-decoration: none;
+    padding-left: 2%;
   }
   li .animain, .animain {
     float: left;
@@ -543,24 +588,30 @@ ul li a {
     text-align: center;
     text-decoration: none;
   }
+  .projects, .project-entry, .row {
+    display: inline-flexbox;
+    overflow-y: hidden;
+  }
   .projects {
-    display: inline-block;
-    width: 100vw;
-    height: 10vh;
-    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto 1% auto;
   }
   .project-entry {
-    display: inline-block;
     width: 20vw;
-    height: 25vh;
+    height: 20vh;
     box-shadow: 8px 8px 10px #fff;
     position: relative;
+    overflow-y: hidden;
   }
   .row{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-gap: 20px;
-      padding-bottom: 14.5%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: fit-content;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1% 4% 1% 8%;
   }
   figcaption{
     color: #000;
@@ -568,9 +619,10 @@ ul li a {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20%;
-    padding: 4%;
+    height: 25%;
+    padding: 5%;
     background-color: #777;
+    overflow-y: hidden;
   }
 
   /*Wide-Screen contact page------------------------------------------*/
