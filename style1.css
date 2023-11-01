@@ -39,7 +39,6 @@ nav ul li a {
   height: 0;
 }
 main {
-  box-sizing: border-box;
   clear: both;
   min-height: 60vh;
   width: 100vw;
@@ -256,6 +255,8 @@ ul li a {
     font-size: 8vh;
   }
   nav {
+    position: -webkit-fixed;
+    position: fixed;
     width: 100vw;
     height: 30vh;
     padding: 0;
@@ -291,7 +292,7 @@ ul li a {
     display: none;
   }
   .sidebar{
-    width: 101vw;
+    width: 100vw;
     height: 5.5vh;
     position: fixed;
     z-index: 1;
@@ -321,7 +322,7 @@ ul li a {
   .openbtn {
     position: absolute;
     top: 9%;
-    font-size: 4vh;
+    font-size: 150%;
     color: #fff;
     background-color: #222;
     border-top: 1px solid #f0f;
@@ -345,8 +346,11 @@ ul li a {
     text-decoration: none;
   }
   main{
-    position:static;
+    position: static;
     padding: 0 1vw;
+    margin-top: 6%;
+    margin-bottom: 1.2vh;
+    min-height: 77vh;
   }
   li .aboutmain, .aboutmain, li .animain, .animain {
     float: left;
