@@ -291,7 +291,7 @@ ul li a {
   nav {
     display: none;
   }
-  .sidebar{
+  .sidebar {
     width: 100vw;
     height: 5.5vh;
     position: fixed;
@@ -307,12 +307,13 @@ ul li a {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  .sidebar a{
+  .sidebar a {
     text-decoration: none;
     transition: 0.3s;
   }
-  .closebtn{
+  .closebtn {
     position: absolute;
+    cursor: pointer;
     top: 0;
     left: 0;
     padding: 0;
@@ -323,6 +324,7 @@ ul li a {
     position: absolute;
     top: 9%;
     font-size: 150%;
+    cursor: pointer;
     color: #fff;
     background-color: #222;
     border-top: 1px solid #f0f;
@@ -332,20 +334,20 @@ ul li a {
     margin: 0 auto;
     overflow-x: hidden;
   }
-  .disbtn{
+  .disbtn {
     width: 101vw;
     top: 5%;
     transition: margin-top .5s;
   }
-  nav li:first-child{
+  nav li:first-child {
     border-top: 1px solid #fff;
   }
-  nav li a{
+  nav li a {
     display: block;
     padding: 0;
     text-decoration: none;
   }
-  main{
+  main {
     position: static;
     padding: 0 1vw;
     margin-top: 6%;
@@ -359,6 +361,150 @@ ul li a {
     border: none;
     background-color: none;
     padding-left: 5%;
+  }
+
+  /* Form Styles */
+  div#form, form {
+    width: auto;
+    margin-top: 5%;
+  }
+  div#form {
+    margin-top: 2vh;
+    margin-bottom: 1%;
+    padding: 0 2% 2% 2%;
+    overflow-x: hidden
+  }
+  div#form h2 {
+    margin: 10% auto 0 auto;
+    text-align: center;
+  }
+  form.form-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    overflow-x: hidden
+  }
+  select, textarea {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+  div.fieldset-row fieldset {
+    clear: both;
+    margin: 0 auto 2% auto;
+    overflow-y: hidden;
+    overflow-x:hidden
+  }
+  .btn {
+    grid-column: 1 / span 3;
+  }
+  fieldset#stars {
+    width: fit-content;
+    height: fit-content;
+  }
+  fieldset#stars,
+  fieldset#stars div {
+    display: inline-block;
+    margin: 0 auto;
+    clear: both;
+    color: #fff;
+    text-align: center;
+    overflow-y: hidden;
+  }
+  fieldset#stars div {
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+  }
+  fieldset#stars div input.star {
+    display: none;
+  }
+  fieldset#stars div label {
+    padding: 0 auto;
+  }
+  #fieldsetFour {
+    display: inline-block;
+  }
+  input.star:checked~label.star:before {
+    content: '\f005';
+    color: #fddd4f;
+    transition: all .2s;
+  }
+  input.star-5:checked~label.star:before{
+    color: rgb(255, 60, 34);
+  }
+  input.star-4:checked~label.star:before {
+    color: #f62;
+  }
+  input.star-3:checked~label.star::before {
+    color: #fddd4f;
+  }
+  input.star-3:checked~label.star::before {
+    color: #ffbb00;
+  }
+  input.star-1:checked~label.star::before {
+    color: #Ffd700;
+  }
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+  #form h2 {
+    text-align: center;
+  }
+  textarea {
+    width: 100%;
+    min-height: 30vw;
+    resize:vertical;
+  }
+  fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+  }
+  label {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3%;
+  }
+  label.star {
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    font-size: 175%;
+    color: #ffffff;
+  }
+  label input {
+    display: inline-block;
+  }
+  label p {
+    display: block;
+    width: 70%;
+  }
+  .platform {
+    display: inline-block;
+  }
+  form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    font-size: 1em;
+    border-radius: 10px;
+  }
+  div#form {
+    margin-bottom: 1vh;
+  }
+  fieldset div, fieldset#stars div input {
+    display: block;
+  }
+  input#submit {
+    display: block;
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0 auto;
+    width: 30vw;
+    height: 15vw;
+    border-radius: 10px;
   }
 }
 
@@ -641,6 +787,163 @@ ul li a {
     border: 0.25vw solid #ff55ff; /* ~5px */
     width: 45vw; 
     height: 35vw; 
+  }
+
+  /* Form Styles */
+  div#form,
+  form {
+    width: auto;
+    margin-top: 4vh;
+  }
+  div#form {
+    margin-top: 2vh;
+    margin-bottom: 1%;
+    padding: 0;
+    overflow-x: hidden
+  }
+  div#form h2 {
+    margin: 3% auto 0 auto;
+    font-size: 2.3em;
+    text-align: center;
+  }
+  form.form-grid div.fieldset-row {
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    gap: 20px;
+    overflow-x: hidden
+  }
+  div.fieldset-row fieldset, select, textarea {
+    margin-bottom: 2%;
+    width: 25vw;
+  }
+  fieldset, label{
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .btn {
+    grid-column: 1 / span 3;
+  }
+  fieldset#stars {
+    width: 50vw;
+    height: 10vh;
+  }
+  fieldset#stars,
+  fieldset#stars div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    clear: both;
+    color: #fff;
+    text-align: center;
+    overflow-y: hidden;
+  }
+  fieldset#stars div {
+    width: fit-content;
+    height: fit-content;
+  }
+  fieldset#stars {
+    clear: both;
+    display: block;
+  }
+  #fieldsetFour {
+    display: block;
+  }
+  input.star:checked~label.star:before {
+    content: '\f005';
+    color: #fddd4f;
+    transition: all .2s;
+  }
+  input.star-5:checked~label.star:before {
+    color: #ff3c22;
+  }
+  input.star-4:checked~label.star:before {
+    color: #f62;
+  }
+  input.star-3:checked~label.star::before {
+    color: #fddd4f;
+  }
+  input.star-3:checked~label.star::before {
+    color: #ffbb00;
+  }
+  input.star-1:checked~label.star::before {
+    color: #Ffd700;
+  }
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+  #pros, #cons {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    min-height: 10vw;
+    overflow: visible;
+    margin: 0 auto;
+    resize: vertical;
+  }
+  fieldset legend {
+    height: 5vh;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-align: center;
+    overflow: hidden;
+  }
+  fieldset p {
+    text-align: center;
+  }
+  label {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3%;
+    font-size: 2.5vh;
+  }
+  fieldset#stars div label {
+    padding: 0 0.5vw;
+    margin: auto 0;
+  }
+  #fName, #lName, #email {
+    margin-bottom: 5vh;
+  }
+  label.star {
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    padding: 1% 0;
+    font-size: 300%;
+    color: #ffffff;
+  }
+  label {
+    display: inline-block;
+  }
+  label p {
+    display: block;
+    width: 100%;
+  }
+  .platform {
+    display: inline-block;
+  }
+  div#form {
+    margin-bottom: 1vh;
+  }
+  fieldset div,
+  fieldset#stars div input {
+    display: block;
+  }
+  fieldset#stars div input.star {
+    display: none;
+  }
+  input#submit {
+    display: block;
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin: auto;
+    width: 10vw;
+    height: 5vw;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
 

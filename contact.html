@@ -9,6 +9,8 @@
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/9461c7dff9.js" crossorigin="anonymous"></script>
     </head>
     
     <body> 
@@ -36,8 +38,87 @@
                 referrerpolicy="no-referrer-when-downgrade" loading="lazy"
                 allowfullscreen="" class="map">
 			    </iframe>
-			
 		    </div>
+            <div id="form">
+                <h2>Complete the form below to rate your experience on this website.</h2>
+                <hr class="break">
+                <form class="form-grid" action="">
+                    <!-- Fieldset 1 -->
+                    <fieldset id="stars">
+                        <div>
+                            <input class="star star-1" id="star-1" type="radio" name="star"  title="One Star"/>
+                            <label class="star star-1" for="star-1"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star"  title="Two Stars"/>
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star"  title="Three Stars"/>
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star"  title="Four Stars"/>
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-5" id="star-5" type="radio" name="star"  title="Five Stars"/>
+                            <label class="star star-5" for="star-5"></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="fieldset-row">
+                        <!-- Fieldset 2 -->
+                        <fieldset>
+                            <div>
+                                <legend>Contact Information</legend>
+                                <hr class="break">
+                                <label for="fName">First Name:</label>
+                                <input type="text" id="fName" name="fName" required>
+                                <label for="lName">Last Name:</label>
+                                <input type="text" id="lName" name="lName" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fieldset 3 -->
+                        <fieldset>
+                            <div>
+                                <legend>Additional Details</legend>
+                                <hr class="break">
+                                <p>Which of the following did you view this website on?</p>
+                                <label class="platform" for="platform">
+                                    <input type="radio" id="mobile" name="viewPlatform" value="Mobile Phone">
+                                    Mobile Phone
+                                </label>
+                                <label class="platform" for="platform">
+                                    <input type="radio" id="desktop" name="viewPlatform" value="Desktop">
+                                    Desktop
+                                </label>
+                                <label class="platform" for="platform">
+                                    <input type="radio" id="laptop" name="viewPlatform" value="Laptop">
+                                    Laptop
+                                </label>
+                                <label class="platform" for="platform">
+                                    <input type="radio" id="tablet" name="viewPlatform" value="Tablet">
+                                    Tablet
+                                </label>
+                                <label class="platform" for="platform">
+                                    <input type="radio" id="otherSelect" name="viewPlatform" value="Other:">Other:
+                                    <input type="text" id="other" name="viewPlatform" value="">
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fieldset 4 -->
+                        <fieldset id="fieldsetFour">
+                            <div>
+                                <legend>Feature Review</legend>
+                                <hr class="break">
+                                <p>If there are any features you like/disliked in particular input them and your reasoning behind them below.</p>
+                                <label for="pros"><p>Good Features</p></label>
+                                <textarea id="pros" name="pros" rows="7"></textarea>
+                                <label for="cons"><p>Bad Features</p></label>
+                                <textarea id="Cons" name="pros" rows="7"></textarea>
+                                <input type="submit" id="submit" value="submit" class="btn">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
         </main>
         <footer>
             <p>
