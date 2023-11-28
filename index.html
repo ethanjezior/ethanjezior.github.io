@@ -13,38 +13,29 @@
   
   <body>
     <header>
-      <img class="header" src="images/header.png" alt="header">
+      <a href="#nav"><img class="header" src="images/header.png" alt="header"></a>
     </header>
-    <h3 class="mobile ee">hehehe</h3>
-    <nav class="sidebar mySidebar">
-      <div class="disbtn mobile">
-        <button type="button" class="openbtn" onclick="openNav()">☰ Open Navigation</button>
-        <button type="button" class="closebtn" onclick="closeNav()" href="javascript:void(0)">☰ Close Navigation</button>
-      </div>
+    <h3 id="nav" class="mobile ee">hehehe</h3>
+    <nav>
       <ul>
         <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
         <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
       </ul>
     </nav>
     <script>
-      function openNav() {
-        document.getElementsByClassName("mySidebar").style.height = "50vh";
-        document.getElementsByClassName("disbtn").style.marginTop = "50vh";
-        document.getElementsByClassName("closebtn").style.display = "block";
-        document.getElementsByClassName("openbtn").style.display = "none";
-        document.getElementsByTagName("nav").style.display = "block";
+      function toggleNav() {
+        var topnav = document.getElementById("mySidebar"),
+        main = document.getElementById("main");
+        topnav.style.height = topnav.style.height == "250px" ? '0' : '250px';
+        main.style.marginTop = main.style.marginTop === "250px" ? '0' : '250px';
       }
-      function closeNav() {
-        document.getElementsByClassName("mySidebar").style.height = "0";
-        document.getElementsByClassName("disbtn").style.marginTop = "0";
-        document.getElementsByClassName("openbtn").style.display = "block";
-        document.getElementsByClassName("closebtn").style.display = "none";
-        document.getElementsByTagName("nav").style.display = "none";
+      function myFunction(x) {
+        x.classList.toggle("change");
       }
     </script>
     <main>

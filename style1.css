@@ -105,15 +105,24 @@ li .aboutmain, .aboutmain, li .animain, .animain{
   border: none;
   background-color: none;
 }
-.indent{
+.indent {
   background-color: none;
   border: none;
   text-decoration: none;
   margin-left: 0;
   margin-bottom: 2%;
-  padding-left: 2%;
+  padding-left: 3%;
   left: 0;
 }
+div#about-pics {
+  float: right;
+  width: 25%;
+  clear: none;
+}
+div#about-content {
+  width: 100%;
+}
+
 /*projects page------------------------------------------*/
 #project-page-selector {
   text-align: center;
@@ -183,26 +192,27 @@ ul li a {
   background: #000;
   text-align: center;
   text-decoration: none;
-  
 }
 .projects {
- width: 80vw;
- height: 10vw;
+ width: 100%;
+ height: auto;
  display: block;
 }
 .project-entry {
   width: 80vw;
-  height: 8vh;
   display: block;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 .row {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 20px;
   padding-bottom: 5%;
-  width: 100vw;
-  height: 25vh;
+  width: 100%;
+  margin: 0 auto 0 auto;
 }
 
 /*contact page------------------------------------------*/
@@ -232,41 +242,51 @@ ul li a {
 
 /* Media Query for Phone Viewport */
 @media screen and (max-width: 629px), print{
-  header{
+  header { 
+    box-sizing: border-box;
+    width: 100%;
+    height: 12vh;
     top: 0;
     margin-top: 0;
-    float:inherit;
+    float: inherit;
   }
-  .header{
-    top: 0;
+  .header {
     box-sizing: border-box;
+    top: 0;
     margin: 0;
     width: 100vw;
-    height: auto;
+    height: 12vh;
     position: -webkit-fixed;
     position: fixed;
     border-bottom: 1px solid #f0f;
   }
-  p .mobile, .mobile .ee, .ee{
+  p .mobile, .mobile .ee, .ee{ 
     box-sizing: border-box;
     text-align: center;
     padding: 0;
     margin: 3vh 0 0 0;
     font-size: 8vh;
   }
+  .ee {
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+  }
   nav {
     position: -webkit-fixed;
-    position: fixed;
-    width: 100vw;
-    height: 30vh;
+    position: static;
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin-bottom: 0;
   }
   nav ul {
     box-sizing: border-box;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: #222;
     overflow: hidden;
     text-align: center;
@@ -276,68 +296,40 @@ ul li a {
     margin: 0;
     padding: 0;
     display: block;
-    height: 6vh;
-    width: 100vw;
+    height: 20%;
+    width: 100%;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
     list-style-type: none;
+    border-bottom: 1px solid #fff;
   }
   nav ul li a {
     color: #ff99ff;
     font-size: 5vh;
     text-align: center;
-    border-bottom: 1px solid #fff;
   }
-  nav {
-    display: none;
-  }
-  .sidebar {
-    width: 100vw;
-    height: 5.5vh;
+  .navbar {
+    width: 100%;
+    height: 0;
     position: fixed;
     z-index: 1;
-    top: 8.5vh;
+    top: 8.5%;
     left: 0;
     color: #fff;
     background-color: #222;
-    border-top: 1px solid #f0f;
-    border-bottom: 1px solid #f0f;
     font-size: 4vh;
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: hidden;
+    transition: 0.5s;
   }
-  .sidebar a {
+  .navbar.show {
+    height: 20%;
+  }
+  .navbar a {
     text-decoration: none;
+    font-size: 5%;
     transition: 0.3s;
-  }
-  .closebtn {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0 auto;
-    display: none;
-  }
-  .openbtn {
-    position: absolute;
-    top: 9%;
-    font-size: 150%;
-    cursor: pointer;
-    color: #fff;
-    background-color: #222;
-    border-top: 1px solid #f0f;
-    border-bottom: 1px solid #f0f;
-    width: 101vw;
-    height: 6vh;
-    margin: 0 auto;
-    overflow-x: hidden;
-  }
-  .disbtn {
-    width: 101vw;
-    top: 5%;
-    transition: margin-top .5s;
   }
   nav li:first-child {
     border-top: 1px solid #fff;
@@ -350,7 +342,7 @@ ul li a {
   main {
     position: static;
     padding: 0 1vw;
-    margin-top: 6%;
+    margin-top: 0;
     margin-bottom: 1.2vh;
     min-height: 77vh;
   }
@@ -362,7 +354,28 @@ ul li a {
     background-color: none;
     padding-left: 5%;
   }
-
+  #aboutmain div.mobile {
+    display: inline-block;
+    height: fit-content;
+    width: auto;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  #aboutmain div.mobile img {
+    display: inline-block;
+  }
+  img.animalpic {
+    width: 48vw;
+    display: block;
+    clear: none;
+  }
+  #aboutnote {
+    font-size: large;
+    text-align: center;
+  }
+  .project-nav li h3{
+    font-size: 10vw;
+  }
   /* Form Styles */
   div#form, form {
     width: auto;
@@ -379,40 +392,42 @@ ul li a {
     text-align: center;
   }
   form.form-grid {
-    display: grid;
+    display: block;
     grid-template-columns: auto;
     grid-gap: 20px;
-    overflow-x: hidden
+    overflow-x: hidden;
   }
   select, textarea {
     margin-bottom: 2%;
     width: 100%;
   }
   div.fieldset-row fieldset {
+    display: inline-block;
     clear: both;
     margin: 0 auto 2% auto;
     overflow-y: hidden;
-    overflow-x:hidden
+    overflow-x: hidden;
+    width: 100%;
   }
   .btn {
     grid-column: 1 / span 3;
   }
   fieldset#stars {
-    width: fit-content;
+    border: 1px solid #fff;
+    width: 100%;
     height: fit-content;
   }
   fieldset#stars,
   fieldset#stars div {
     display: inline-block;
     margin: 0 auto;
-    clear: both;
     color: #fff;
     text-align: center;
     overflow-y: hidden;
   }
   fieldset#stars div {
-    margin: auto;
-    width: 100%;
+    box-sizing: border-box;
+    width: fit-content;
     height: fit-content;
   }
   fieldset#stars div input.star {
@@ -470,7 +485,7 @@ ul li a {
     float: right;
     width: fit-content;
     height: fit-content;
-    font-size: 175%;
+    font-size: 230%;
     color: #ffffff;
   }
   label input {
@@ -512,10 +527,10 @@ ul li a {
 @media screen and (min-width: 630px), print{
   /* Widescreen Viewport: Show widescreen class,
   hide mobile class */
-  .wide-screen{
+  .wide-screen {
     display: block;
   }
-  .mobile, .ee{
+  .mobile, .ee, .cut {
     display: none;
     height: 0;
     width: 0;
@@ -549,27 +564,27 @@ ul li a {
     height: auto;
     background-color: #111;
   }
-  nav, nav ul, nav ul li, nav ul li a{
+  nav, nav ul, nav ul li, nav ul li a {
     box-sizing: border-box;
     list-style-type: none;
   }
-  nav ul, nav ul li, nav ul li.logo, nav ul li a{
+  nav ul, nav ul li, nav ul li.logo, nav ul li a {
     height: 100%;
     object-fit: fill;
     text-align: center;
   }
-  nav ul, nav ul li, nav ul li.logo{
+  nav ul, nav ul li, nav ul li.logo {
     padding: 0;
     margin: 0;
   }
   nav {
     margin: 0.25vw auto 0vw auto; /* ~5px, ~5px */
     width: 90vw;
-    height: 4.3vh;
-    border: 1px solid #FFF;
+    height: 4vh;
+    border: 2px solid #FFF;
   }
   nav ul {
-    height: 5vh;
+    height: 10vh;
     width: 90vw;
     list-style-type: none;
     margin: 0;
@@ -581,7 +596,7 @@ ul li a {
     display: inline-block;
     padding: 0;
     margin: 0;
-    width: 7vw;
+    width: 9vw;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
   }
@@ -638,12 +653,13 @@ ul li a {
   /*Wide-Screen about page------------------------------------------*/
   #aboutmain {
     min-height: 90vh;
+    padding-left: 3vw;
   }
   .clear {
     clear: both;
     display: inline-block;
   }
-    .aboutmain li, .aboutmain{
+    .aboutmain li, .aboutmain {
     float: left;
     clear: both;
     font-size: 1em;
@@ -665,6 +681,37 @@ ul li a {
     border: none;
     background-color: #000;
     text-decoration: none;
+  }
+  div#about-pics {
+    float: right;
+    margin-top: 15vh;
+    width: 25%;
+    clear: none;
+  }
+  div#about-content {
+    width: 75%;
+  }
+  .animalpic {
+    max-height: none;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin: none;
+  }
+  #chipmunk-1 {
+    width: 45%;
+    margin-right: 5%;
+  }
+  #chipmunk-2 {
+    width: 48%;
+    
+  }
+  #bird-1 {
+    width: 33%;
+    margin-right: 8%;
+  }
+  #bird-2 {
+    width: 40%;
+    margin-right: 10%;
   }
 
   /*Wide-Screen projects page------------------------------------------*/
@@ -908,11 +955,12 @@ ul li a {
     margin-bottom: 5vh;
   }
   label.star {
+    box-sizing: border-box;
     float: right;
     width: fit-content;
     height: fit-content;
     padding: 1% 0;
-    font-size: 300%;
+    font-size: 250%;
     color: #ffffff;
   }
   label {
@@ -939,8 +987,8 @@ ul li a {
     display: block;
     font-weight: bold;
     font-size: 1.8vw;
-    margin: auto;
-    width: 10vw;
+    margin: 1.5% auto 0 auto;
+    width: 30vw;
     height: 5vw;
     border-radius: 10px;
     overflow: hidden;
@@ -951,6 +999,39 @@ ul li a {
 @media screen and (min-width: 630px) and (max-width: 1014px), print {
   header {
     margin-top: 1vh;
+  }
+}
+
+/* Media Queries for Mini-Tablets */
+@media screen and (min-width: 630px) and (max-width: 750px), print {
+  fieldset, div fieldset, div fieldset div {
+    width: 80vw;
+  }
+  form.form-grid div.fieldset-row {
+      margin-top: 3vh;
+      display: grid;
+      grid-template-columns: auto;
+      gap: 1px;
+      overflow-x: hidden
+  }
+  input#submit {
+    height: 10vw;
+    font-size: 200%;
+  }
+}
+
+@media screen and (min-width: 530px) and (max-width: 1260px), print {
+  fieldset legend {
+      height: 9vh;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1.8em;
+      text-align: center;
+      overflow: hidden;
+  }
+  input#submit {
+    height: 10vw;
+    font-size: 200%;
   }
 }
 
@@ -965,11 +1046,22 @@ ul li a {
     overflow-x: hidden;
     background-color: #444;
   }
+
+  /* Form Styles */
+  label.star {
+    box-sizing: border-box;
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    padding: 1% 0;
+    font-size: 370%;
+    color: #ffffff;
+  }
 }
 
 /* Media Query for Large Desktop Viewport */
 @media screen and (min-width: 1921px), print{
-  #container{
+  #container {
     width: 1920px;
     margin: 0 auto;
   }
@@ -977,7 +1069,7 @@ ul li a {
 
 /* Media Query for Print */
 @media print{
-  body{
+  body {
     background: #fff;
     color: #000;
   }
