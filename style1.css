@@ -349,7 +349,7 @@ ul li a {
   li .aboutmain, .aboutmain, li .animain, .animain {
     float: left;
     clear: both;
-    font-size: 2vh;
+    font-size: 2.5vh;
     border: none;
     background-color: none;
     padding-left: 5%;
@@ -376,6 +376,7 @@ ul li a {
   .project-nav li h3{
     font-size: 10vw;
   }
+
   /* Form Styles */
   div#form, form {
     width: auto;
