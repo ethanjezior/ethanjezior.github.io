@@ -245,7 +245,7 @@ ul li a {
   header { 
     box-sizing: border-box;
     width: 100%;
-    height: 12vh;
+    height: 14vh;
     top: 0;
     margin-top: 0;
     float: inherit;
@@ -255,10 +255,11 @@ ul li a {
     top: 0;
     margin: 0;
     width: 100vw;
-    height: 12vh;
+    height: 14vh;
     position: -webkit-fixed;
     position: fixed;
     border-bottom: 1px solid #f0f;
+    background-color: #000;
   }
   p .mobile, .mobile .ee, .ee{ 
     box-sizing: border-box;
@@ -346,10 +347,14 @@ ul li a {
     margin-bottom: 1.2vh;
     min-height: 77vh;
   }
-  li .aboutmain, .aboutmain, li .animain, .animain {
+  main#aboutmain * h2 {
+    text-decoration: underline;
+    font-size: larger;
+  }
+  .aboutmain, .animain {
     float: left;
     clear: both;
-    font-size: 2.5vh;
+    font-size: 6vw;
     border: none;
     background-color: none;
     padding-left: 5%;
@@ -373,7 +378,13 @@ ul li a {
     font-size: large;
     text-align: center;
   }
-  .project-nav li h3{
+  p#project-page-selector {
+    font-size: 12vw;
+  }
+  p#project-page-caption {
+    font-size: 7vw;
+  }
+  .project-nav li h3 {
     font-size: 10vw;
   }
 
