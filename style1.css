@@ -35,6 +35,16 @@ nav ul li a {
   clear: both;
   overflow-y: hidden;
 }
+li#duel, li#duel a {
+  width: 100%;
+  color: #cc0000;
+  background-color: sandybrown;
+  font-weight: bolder;
+}
+audio {
+  display: block;
+  clear: both;
+}
 .hide {
   height: 0;
 }
@@ -250,18 +260,23 @@ ul li a {
     margin-top: 0;
     float: inherit;
   }
+  header a {
+    width: 100%;
+    background-color: #000;
+  }
   .header {
-    box-sizing: border-box;
     top: 0;
     margin: 0;
-    width: 100vw;
     height: 14vh;
+    max-width: 100%;
+    width: auto;
     position: -webkit-fixed;
     position: fixed;
     border-bottom: 1px solid #f0f;
     background-color: #000;
+    object-fit: contain;
   }
-  p .mobile, .mobile .ee, .ee{ 
+  p .mobile, .mobile .ee, .ee { 
     box-sizing: border-box;
     text-align: center;
     padding: 0;

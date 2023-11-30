@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Ethan Jezior template.html 9/14/23 -->
+<html id="html" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> The Dueling Grounds - Ethans Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
+    </header>
+    <nav class="duel">
+        <ul>
+            <li class="duel"><a href="duel.html">???</a></li>
+        </ul>
+    </nav>
+    <main class="duel">
+        <div>
+            <audio src="audio/wildwest-1.mp3" id="bgm" type="audio/mpeg" loop="true" width="0" height="0"></audio>
+        </div>
+        
+    </main>
+    <script>
+        let audio = document.getElementById("bgm"),
+        playlist = ["audio/wildwest-1.mp3", "audio/wildwest-2.mp3", "audio/wildwest-3.mp3"],
+        current = 0;
+
+        audio.onended = () => {
+            current++;
+            if(current >= playlist.length) { current = 0; }
+            audio.src = playlist[current];
+            audio.pause();
+            audio.load();
+            audio.play();
+        };
+    </script>
+    <footer>
+        <p>
+            &copy; Copyright 2023. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
