@@ -15,28 +15,55 @@
     </header>
     <nav class="duel">
         <ul>
-            <li class="duel"><a href="duel.html">???</a></li>
+            <li class="duel"><a>???</a></li>
         </ul>
     </nav>
     <main class="duel">
-        <div>
-            <audio src="audio/wildwest-1.mp3" id="bgm" type="audio/mpeg" loop="true" width="0" height="0"></audio>
-        </div>
-        
+        <table id="tictactoe">
+            <h1>Tic-Tac-Toe</h1>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </main>
+    <audio id="audio" controls>
+        <source src="" />
+    </audio>
     <script>
-        let audio = document.getElementById("bgm"),
-        playlist = ["audio/wildwest-1.mp3", "audio/wildwest-2.mp3", "audio/wildwest-3.mp3"],
-        current = 0;
+        var tracks = {
+                list: ["audio/wildwest-1.mp3", "audio/wildwest-2.mp3", "audio/wildwest-3.mp3"],
+                index: 0,
+                next: function () {
+                    if (this.index == this.list.length - 1) this.index = 0;
+                    else {
+                        this.index += 1;
+                    }
+                },
+                play: function () {
+                    return this.list[this.index];
+                }
+            }
 
-        audio.onended = () => {
-            current++;
-            if(current >= playlist.length) { current = 0; }
-            audio.src = playlist[current];
-            audio.pause();
-            audio.load();
-            audio.play();
-        };
+            audio.onended = function () {
+                tracks.next();
+                audio.src = tracks.play();
+                audio.load();
+                audio.play();
+            }
+
+            audio.src = tracks.play();
     </script>
     <footer>
         <p>

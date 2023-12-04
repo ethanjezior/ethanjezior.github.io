@@ -41,9 +41,14 @@ li#duel, li#duel a {
   background-color: sandybrown;
   font-weight: bolder;
 }
+main.duel {
+  background-image: url(images/backgrounds/wildwest-town.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
 audio {
   display: block;
-  clear: both;
 }
 .hide {
   height: 0;
@@ -593,9 +598,11 @@ ul li a {
   }
   nav, nav ul, nav ul li, nav ul li a {
     box-sizing: border-box;
+    max-height: 100%;
     list-style-type: none;
   }
   nav ul, nav ul li, nav ul li.logo, nav ul li a {
+    box-sizing: border-box;
     height: 100%;
     object-fit: fill;
     text-align: center;
@@ -668,7 +675,19 @@ ul li a {
     margin: 0.4629vw 0.1613vw 0.4629vw 0; /* ~5px, ~3px*/
     color:#000;
   }
-
+  table#tictactoe {
+    margin-left: 18vw;
+  }
+  table#tictactoe tr, table#tictactoe tr td {
+    border: 2px solid #aa0000;
+    border-collapse: collapse;
+    width: 17vh;
+    height: 17vh;
+  }
+  table#tictactoe h1, h1 {
+    width: 100%;
+    text-align: center;
+  }
   /*Wide-Screen index page------------------------------------------*/
   #welcome {
     text-align: center;
@@ -848,7 +867,24 @@ ul li a {
     background-color: #777;
     overflow-y: hidden;
   }
-
+  #hat-link {
+    box-sizing: border-box;
+    float: left;
+    background-color: none;
+    max-height: 100%;
+  }
+  li#hat-link a {
+    background-color: #888;
+  }
+  img#cowboyhat {
+    box-sizing: border-box;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: none;
+  }
+  .center {
+    text-align: center;
+  }
   /*Wide-Screen contact page------------------------------------------*/
   #contact {
     text-align: center;
