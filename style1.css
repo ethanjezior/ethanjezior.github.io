@@ -679,10 +679,30 @@ ul li a {
     margin-left: 18vw;
   }
   table#tictactoe tr, table#tictactoe tr td {
-    border: 2px solid #aa0000;
+    border: 2px solid #000;
     border-collapse: collapse;
+    background-color: #aa00aa;
     width: 17vh;
     height: 17vh;
+  }
+  table#tictactoe tr td {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 5vh;
+  }
+  section {
+    margin-left: 27.5vw;
+  }
+  section.controls {
+    margin-left: 30vw;
+  }
+  .player {
+    color: blue;
+  }
+  .computer {
+    color: red;
   }
   table#tictactoe h1, h1 {
     width: 100%;

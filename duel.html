@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <title> The Dueling Grounds - Ethans Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <script src="./duel.js"></script>
 </head>
 
 <body>
@@ -21,21 +22,26 @@
     <main class="duel">
         <table id="tictactoe">
             <h1>Tic-Tac-Toe</h1>
+            <section>Player <span class="display-player player">X</span>'s turn</section>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="tile"></td>
+                <td class="tile"></td>
+                <td class="tile"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="tile"></td>
+                <td class="tile"></td>
+                <td class="tile"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="tile"></td>
+                <td class="tile"></td>
+                <td class="tile"></td>
             </tr>
+            <section class="announcer hide"></section>
+            <section class="controls">
+                <button id="reset">Reset</button>
+            </section>
         </table>
     </main>
     <audio id="audio" controls>
