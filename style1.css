@@ -35,21 +35,6 @@ nav ul li a {
   clear: both;
   overflow-y: hidden;
 }
-li#duel, li#duel a {
-  width: 100%;
-  color: #cc0000;
-  background-color: sandybrown;
-  font-weight: bolder;
-}
-main.duel {
-  background-image: url(images/backgrounds/wildwest-town.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
-}
-audio {
-  display: block;
-}
 .hide {
   height: 0;
 }
@@ -675,8 +660,80 @@ ul li a {
     margin: 0.4629vw 0.1613vw 0.4629vw 0; /* ~5px, ~3px*/
     color:#000;
   }
-  table#tictactoe {
-    margin-left: 18vw;
+  li#duel,
+  li#duel a {
+    width: 100%;
+    color: #cc0000;
+    font-weight: bolder;
+  }
+  main.duel {
+    border: none;
+    background-color: none;
+    padding: 0;
+  }
+  audio {
+    display: block;
+    margin: 0 auto;
+  }
+  div#console {
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    width: 40%;
+    height: 100%;
+    background-color: #111;
+    border: 2px solid #aa00aa;
+    border-left: 0;
+  }
+  h1#console-header {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 5%;
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+  }
+  div#console-content {
+    display: block;
+    box-sizing: border-box;
+    padding:  2% 20% 0 20%;
+    padding-top: 2%;
+    height: 100%;
+  }
+  section#playerTurn {
+    font-size: 125%;
+  }
+  audio#audio {
+    display: block;
+    width: 100%;
+    margin: 2% 0;
+  }
+  button.gameToggle {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin: 2% 0;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: 1px solid transparent;
+    box-shadow: none;
+    font-size: 125%;
+  }
+  div#game {
+    background-image: url(images/backgrounds/wildwest-town.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    width: 60%;
+    height: 100%;
+    border: 2px solid #aa00aa;
+  }
+  table#tictactoe, table#tictactoe2 {
+    background-color:#000;
+    margin: auto auto;
   }
   table#tictactoe tr, table#tictactoe tr td {
     border: 2px solid #000;
@@ -685,29 +742,48 @@ ul li a {
     width: 17vh;
     height: 17vh;
   }
-  table#tictactoe tr td {
+  table#tictactoe2 tr, table#tictactoe2 tr td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    background-color: #aa00aa;
+    width: 17vh;
+    height: 17vh;
+  }
+  table#tictactoe tr td, table#tictactoe2 tr td {
     text-align: center;
     justify-items: center;
     align-items: center;
     cursor: pointer;
-    font-size: 5vh;
+  }
+  table#tictactoe tr td, table#tictactoe2 tr td {
+    font-size: 200%;
+  }
+  table#tictactoe2 tr, table#tictactoe2 tr td {
+    font-size: 125%;
+  }
+  table#tictactoe2, table#tictactoe2 * {
+    display: none;
+  }
+  button#reset, button#reset2 {
+   margin-bottom: 2%;
+   width: 10%;
+   height: 10%;
   }
   section {
-    margin-left: 27.5vw;
+    text-align: center;
   }
-  section.controls {
-    margin-left: 30vw;
-  }
-  .player {
+  .player, .player1 {
     color: blue;
   }
-  .computer {
+  .computer, .player2 {
     color: red;
   }
   table#tictactoe h1, h1 {
     width: 100%;
     text-align: center;
+    margin-bottom: 0;
   }
+
   /*Wide-Screen index page------------------------------------------*/
   #welcome {
     text-align: center;

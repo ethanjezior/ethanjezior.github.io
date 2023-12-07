@@ -1,5 +1,61 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // Content
+    // Background-Music
+    var tracks = {
+        list: ["audio/wildwest-1.mp3", "audio/wildwest-2.mp3", "audio/wildwest-3.mp3"],
+        index: 0,
+        next: function () {
+            if (this.index == this.list.length - 1) this.index = 0;
+            else {
+                this.index += 1;
+            }
+        },
+        play: function () {
+            return this.list[this.index];
+        }
+    }
+
+    audio.onended = function () {
+        tracks.next();
+        audio.src = tracks.play();
+        audio.load();
+        audio.play();
+    }
+
+    audio.src = tracks.play();
+
+    // Tic-Tac-Toe / Tic-Tac-Toe^2 Toggle
+    document.getElementById("gameModeToggle").addEventListener("click", gameModeToggle);
+    function gameModeToggle() {
+        var x = document.getElementById("tictactoe");
+        var y = document.getElementById("tictactoe2");
+        var z = document.getElementById("tictactoeHead");
+        var u = document.getElementById("tictactoe2Head");
+        var w = document.getElementById("reset");
+        var v = document.getElementById("reset2");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+            u.style.display = "none";
+            w.style.display = "block";
+            v.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+            u.style.display = "block";
+            w.style.display = "none";
+            v.style.display = "block";
+        }
+        resetBoard;
+    }
+
+    // Singleplayer / Multiplayer Toggle
+    function playerModeToggle() {
+        
+    }
+
+    // Constants / Variables
     const tiles = Array.from(document.querySelectorAll('.tile'));
     const playerDisplay = document.querySelector('.display-player');
     const resetButton = document.querySelector('#reset');
@@ -31,6 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
         [2, 4, 6]
     ];
 
+    // Procedures
     const isValidAction = (tile) => {
         if (tile.innerText === 'X' || tile.innerText === 'O') {
             return false;

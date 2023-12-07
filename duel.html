@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
+        <a href="index.html"><img class="header" src="images/header.png" alt="header"></a>
     </header>
     <nav class="duel">
         <ul>
@@ -20,57 +20,65 @@
         </ul>
     </nav>
     <main class="duel">
-        <table id="tictactoe">
-            <h1>Tic-Tac-Toe</h1>
-            <section>Player <span class="display-player player">X</span>'s turn</section>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <section class="announcer hide"></section>
-            <section class="controls">
-                <button id="reset">Reset</button>
-            </section>
-        </table>
+        <div id="console">
+            <h1 id="console-header">Console</h1>
+            <div id="console-content">
+                <section id="playerTurn">Player <span class="display-player player">X</span>'s turn</section>
+                <audio id="audio" controls>
+                    <source src="" />
+                </audio>
+                <button class="gameToggle" id="gameModeToggle" title="Toggles between Tic-Tac-Toe and Tic-Tac-Toe^2">Gamemode</button>
+                <button class="gameToggle" id="playerModeToggle" title="Toggles between Singleplayer and Multiplayer">Playermode</button>
+            </div>
+        </div>
+        <div id="game">
+            <table id="tictactoe">
+                <h1 id="tictactoeHead">Tic-Tac-Toe</h1>
+                <tr>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                </tr>
+                <tr>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                </tr>
+                <tr>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                </tr>
+                <section class="announcer hide"></section>
+                <section class="controls">
+                    <button id="reset">Reset</button>
+                </section>
+            </table>
+            <table id="tictactoe2">
+                <h1 id="tictactoe2Head">Tic-Tac-Toe^2</h1>
+                <tr>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                </tr>
+                <tr>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                </tr>
+                <tr>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                    <td class="tile"></td>
+                </tr>
+                <section class="announcer hide"></section>
+                <section class="controls">
+                    <button id="reset2">Reset</button>
+                </section>
+            </table>
+        </div>
+        
     </main>
-    <audio id="audio" controls>
-        <source src="" />
-    </audio>
-    <script>
-        var tracks = {
-                list: ["audio/wildwest-1.mp3", "audio/wildwest-2.mp3", "audio/wildwest-3.mp3"],
-                index: 0,
-                next: function () {
-                    if (this.index == this.list.length - 1) this.index = 0;
-                    else {
-                        this.index += 1;
-                    }
-                },
-                play: function () {
-                    return this.list[this.index];
-                }
-            }
-
-            audio.onended = function () {
-                tracks.next();
-                audio.src = tracks.play();
-                audio.load();
-                audio.play();
-            }
-
-            audio.src = tracks.play();
-    </script>
     <footer>
         <p>
             &copy; Copyright 2023. All Rights Reserved.
