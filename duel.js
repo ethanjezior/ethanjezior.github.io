@@ -71,10 +71,10 @@ window.addEventListener('DOMContentLoaded', () => {
             l.style.display = "block";
             
             // Style used elements
-            for(var o = 0; o < k.length; o++ ){
-                var currentk = k[o];
-                currentk.style.height = "4vh";
-                currentk.style.width = "4vh";
+            for(var o = 0; o < k.length; o++){
+                k[o].style.display = "block";
+                k[o].style.height = "5%";
+                k[o].style.width = "5%";
             }
 
             v.style.marginLeft = "auto";
