@@ -25,30 +25,75 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Tic-Tac-Toe / Tic-Tac-Toe^2 Toggle
     document.getElementById("gameModeToggle").addEventListener("click", gameModeToggle);
-    function gameModeToggle() {
+    function gameModeToggle() { // If gameModeToggle is activated convert elements to variables using their ID's
+        var k = document.querySelectorAll(".tile2");
+        var h = document.getElementById("secReset");
+        var l = document.getElementById("secReset2");
         var x = document.getElementById("tictactoe");
         var y = document.getElementById("tictactoe2");
         var z = document.getElementById("tictactoeHead");
         var u = document.getElementById("tictactoe2Head");
         var w = document.getElementById("reset");
         var v = document.getElementById("reset2");
-        if (x.style.display == "none") {
+        if (x.style.display == "none") { // If element with id 'tictactoe' isn't being displayed
+            // Display used elements
             x.style.display = "block";
-            y.style.display = "none";
             z.style.display = "block";
-            u.style.display = "none";
             w.style.display = "block";
+            h.style.display = "block";
+
+            // Style used elements
+            x.style.width = "fit-content";
+            x.style.marginLeft = "auto";
+            x.style.marginRight = "auto";
+            x.style.padding = "none";
+            x.style.marginBottom = "5%";
+
+            w.style.marginLeft = "auto";
+            w.style.marginRight = "auto";
+            w.style.marginBottom = "2%";
+            w.style.paddingTop = "0px";
+            
+            h.style.marginLeft = "auto";
+            h.style.marginRight = "auto";
+
+            // Hide unused elements
+            y.style.display = "none";
+            u.style.display = "none";
             v.style.display = "none";
-        } else {
-            x.style.display = "none";
+            l.style.display = "none";
+
+        } else { // ... otherwise ...
+            // Display used elements
             y.style.display = "block";
-            z.style.display = "none";
             u.style.display = "block";
-            w.style.display = "none";
             v.style.display = "block";
+            l.style.display = "block";
+            
+            // Style used elements
+            for(var o = 0; o < k.length; o++ ){
+                var currentk = k[o];
+                currentk.style.height = "4vh";
+                currentk.style.width = "4vh";
+            }
+
+            v.style.marginLeft = "auto";
+            v.style.marginRight = "auto";
+            v.style.marginBottom = "2%";
+            v.style.paddingTop = "0px";
+
+            l.style.marginLeft = "auto";
+            l.style.marginRight = "auto";
+
+            // Hide unused ulements
+            x.style.display = "none";
+            z.style.display = "none";
+            w.style.display = "none";
+            h.style.display = "none";
         }
         resetBoard;
     }
+
 
     // Singleplayer / Multiplayer Toggle
     function playerModeToggle() {

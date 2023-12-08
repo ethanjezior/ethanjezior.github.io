@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Ethan Jezior template.html 9/14/23 -->
 <html id="html" lang="en">
 
 <head>
@@ -27,8 +26,8 @@
                 <audio id="audio" controls>
                     <source src="" />
                 </audio>
-                <button class="gameToggle" id="gameModeToggle" title="Toggles between Tic-Tac-Toe and Tic-Tac-Toe^2">Gamemode</button>
-                <button class="gameToggle" id="playerModeToggle" title="Toggles between Singleplayer and Multiplayer">Playermode</button>
+                <button class="gameToggle" type="button" id="gameModeToggle" title="Toggles between Tic-Tac-Toe and Tic-Tac-Toe^2">Gamemode</button>
+                <button class="gameToggle" type="button" id="playerModeToggle" title="Toggles between Singleplayer and Multiplayer">Playermode</button>
             </div>
         </div>
         <div id="game">
@@ -50,30 +49,174 @@
                     <td class="tile"></td>
                 </tr>
                 <section class="announcer hide"></section>
-                <section class="controls">
-                    <button id="reset">Reset</button>
+                <section id="secReset" class="controls">
+                    <button id="reset" type="button">Reset</button>
                 </section>
             </table>
             <table id="tictactoe2">
                 <h1 id="tictactoe2Head">Tic-Tac-Toe^2</h1>
-                <tr>
-                    <td class="tile"></td>
-                    <td class="tile"></td>
-                    <td class="tile"></td>
+                <tr> <!-- Start of Outer-Row 1 -------------------->
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="tile"></td>
-                    <td class="tile"></td>
-                    <td class="tile"></td>
+                <tr> <!-- Start of Outer-Row 2 -------------------->
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="tile"></td>
-                    <td class="tile"></td>
-                    <td class="tile"></td>
+                <tr> <!-- Start of Outer-Row 3 -------------------->
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr> <!-- Start of Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Start of Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
                 </tr>
                 <section class="announcer hide"></section>
-                <section class="controls">
-                    <button id="reset2">Reset</button>
+                <section id="secReset2" class="controls">
+                    <button id="reset2" type="button">Reset</button>
                 </section>
             </table>
         </div>

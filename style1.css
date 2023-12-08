@@ -668,7 +668,7 @@ ul li a {
   }
   main.duel {
     border: none;
-    background-color: none;
+    background-color: transparent;
     padding: 0;
   }
   audio {
@@ -677,7 +677,6 @@ ul li a {
   }
   div#console {
     display: block;
-    box-sizing: border-box;
     float: right;
     width: 40%;
     height: 100%;
@@ -734,6 +733,7 @@ ul li a {
   table#tictactoe, table#tictactoe2 {
     background-color:#000;
     margin: auto auto;
+    margin-bottom: 5%;
   }
   table#tictactoe tr, table#tictactoe tr td {
     border: 2px solid #000;
@@ -768,6 +768,15 @@ ul li a {
    margin-bottom: 2%;
    width: 10%;
    height: 10%;
+   padding-top: 0px;
+  }
+  button#reset {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1#tictactoe2Head, button#reset2 {
+    display: none;
   }
   section {
     text-align: center;
@@ -778,7 +787,7 @@ ul li a {
   .computer, .player2 {
     color: red;
   }
-  table#tictactoe h1, h1 {
+  h1#tictactoeHead, h1#tictactoe2Head {
     width: 100%;
     text-align: center;
     margin-bottom: 0;
