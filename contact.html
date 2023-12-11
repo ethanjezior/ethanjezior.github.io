@@ -1,134 +1,141 @@
 <!DOCTYPE html>
 <!-- Ethan Jezior template.html 9/14/23 -->
 <html id="html" lang="en">
-     
-    <head>
-        <meta charset="utf-8">
-        <title>Contact - Ethans Portfolio</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style1.css" type="text/css">
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/9461c7dff9.js" crossorigin="anonymous"></script>
-    </head>
-    
-    <body> 
-        <header>
-            <a href="#returnContactNav"><img class="header" src="images/header.png" alt="header"></a>
-        </header>
-        <h3 id="returnContactNav" class="ee">hehehe</h3>
-        <nav id="nav">
-            <ul>
-		        <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
-		        <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-		        <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
-		        <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
-            </ul>
-        </nav>
-        <main>
-		    <div id="contact">
-			    <h1><u>Contact Me</u></h1>
-			    <h4>Email Me: <a href="mailto:stealthninja110@yahoo.com">stealthninja110@yahoo.com</a></h4>
-			    <h4>Current schooling location: <a href="https://cvccworks.edu">Cuyahoga Valley Career Center</a></h4>
-			    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.346873549841!2d-81.62561820338772!3d41.34481362994224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830e6dd7da6a0c5%3A0xe21fba97e75c809!2sCuyahoga%20Valley%20Career%20Center!5e0!3m2!1sen!2sus!4v1696001921541!5m2!1sen!2sus"
-                referrerpolicy="no-referrer-when-downgrade" loading="lazy"
-                allowfullscreen="" class="map" title="map" name="map">
-			    </iframe>
-		    </div>
-            <div id="form">
-                <h2>Complete the form below to rate your experience on this website.</h2>
-                <hr class="break">
-                <form class="form-grid" action="">
-                    <!-- Fieldset 1: Star Rating -->
-                    <fieldset id="stars">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact - Ethans Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9461c7dff9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#returnContactNav"><img class="header" src="images/header.png" alt="header"></a>
+    </header>
+    <h3 id="returnContactNav" class="ee">hehehe</h3>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="contact">
+            <h1><u>Contact Me</u></h1>
+            <h4>Email Me: <a href="mailto:stealthninja110@yahoo.com">stealthninja110@yahoo.com</a></h4>
+            <h4>Current schooling location: <a href="https://cvccworks.edu">Cuyahoga Valley Career Center</a></h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.346873549841!2d-81.62561820338772!3d41.34481362994224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830e6dd7da6a0c5%3A0xe21fba97e75c809!2sCuyahoga%20Valley%20Career%20Center!5e0!3m2!1sen!2sus!4v1696001921541!5m2!1sen!2sus"
+                referrerpolicy="no-referrer-when-downgrade" loading="lazy" allowfullscreen="" class="map" title="map"
+                name="map">
+            </iframe>
+        </div>
+        <div id="form">
+            <h2>Complete the form below to rate your experience on this website.</h2>
+            <hr class="break">
+            <form class="form-grid" action="">
+                <!-- Fieldset 1: Star Rating -->
+                <fieldset id="stars">
+                    <div>
+                        <input class="star star-1" id="star-1" type="radio" name="star" title="One Star" />
+                        <label class="star star-1" for="star-1"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star" title="Two Stars" />
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star" title="Three Stars" />
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star" title="Four Stars" />
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-5" id="star-5" type="radio" name="star" title="Five Stars" />
+                        <label class="star star-5" for="star-5"></label>
+                    </div>
+                </fieldset>
+
+                <div class="fieldset-row">
+                    <!-- Fieldset 2: Contact Information -->
+                    <fieldset>
                         <div>
-                            <input class="star star-1" id="star-1" type="radio" name="star"  title="One Star"/>
-                            <label class="star star-1" for="star-1"></label>
-                            <input class="star star-2" id="star-2" type="radio" name="star"  title="Two Stars"/>
-                            <label class="star star-2" for="star-2"></label>
-                            <input class="star star-3" id="star-3" type="radio" name="star"  title="Three Stars"/>
-                            <label class="star star-3" for="star-3"></label>
-                            <input class="star star-4" id="star-4" type="radio" name="star"  title="Four Stars"/>
-                            <label class="star star-4" for="star-4"></label>
-                            <input class="star star-5" id="star-5" type="radio" name="star"  title="Five Stars"/>
-                            <label class="star star-5" for="star-5"></label>
+                            <legend>Contact Information</legend>
+                            <hr class="break">
+                            <p>Please enter your contact information.</p>
+                            <label for="fName">First Name:</label>
+                            <input type="text" id="fName" name="fName" autocomplete="given-name" required>
+                            <label for="lName">Last Name:</label>
+                            <input type="text" id="lName" name="lName" autocomplete="family-name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
                         </div>
                     </fieldset>
 
-                    <div class="fieldset-row">
-                        <!-- Fieldset 2: Contact Information -->
-                        <fieldset>
-                            <div>
-                                <legend>Contact Information</legend>
-                                <hr class="break">
-                                <p>Please enter your contact information.</p>
-                                <label for="fName">First Name:</label>
-                                <input type="text" id="fName" name="fName" autocomplete="given-name" required>
-                                <label for="lName">Last Name:</label>
-                                <input type="text" id="lName" name="lName" autocomplete="family-name" required>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" autocomplete="email" required>
-                            </div>
-                        </fieldset>
+                    <!-- Fieldset 3: Additional Details -->
+                    <fieldset>
+                        <div>
+                            <legend>Additional Details</legend>
+                            <hr class="break">
+                            <p>Which of the following did you view this website on?</p>
+                            <label class="platform" for="mobile">
+                                <input type="radio" id="mobile" name="platform" value="Mobile Phone"
+                                    title="MobileSelect" checked />
+                                Mobile
+                            </label>
+                            <label class="platform" for="desktop">
+                                <input type="radio" id="desktop" name="platform" value="Desktop"
+                                    title="DesktopSelect" />
+                                Desktop
+                            </label>
+                            <label class="platform" for="laptop">
+                                <input type="radio" id="laptop" name="platform" value="Laptop" title="LaptopSelect" />
+                                Laptop
+                            </label>
+                            <label class="platform" for="tablet">
+                                <input type="radio" id="tablet" name="platform" value="Tablet" title="TabletSelect" />
+                                Tablet
+                            </label>
+                            <label class="platform" for="otherSelect">
+                                <input type="radio" id="otherSelect" name="platform" value="Other:"
+                                    title="OtherSelect" />
+                                Other:
+                                <label for="other">
+                                    <input type="text" id="other" name="platform" title="OtherText">
+                                </label>
+                            </label>
+                        </div>
+                    </fieldset>
 
-                        <!-- Fieldset 3: Additional Details -->
-                        <fieldset>
-                            <div>
-                                <legend>Additional Details</legend>
-                                <hr class="break">
-                                <p>Which of the following did you view this website on?</p>
-                                <label class="platform" for="mobile">
-                                    <input type="radio" id="mobile" name="platform" value="Mobile Phone" title="MobileSelect" checked />
-                                    Mobile
-                                </label>
-                                <label class="platform" for="desktop">
-                                    <input type="radio" id="desktop" name="platform" value="Desktop" title="DesktopSelect"/>
-                                    Desktop
-                                </label>
-                                <label class="platform" for="laptop">
-                                    <input type="radio" id="laptop" name="platform" value="Laptop" title="LaptopSelect"/>
-                                    Laptop
-                                </label>
-                                <label class="platform" for="tablet">
-                                    <input type="radio" id="tablet" name="platform" value="Tablet" title="TabletSelect"/>
-                                    Tablet
-                                </label>
-                                <label class="platform" for="otherSelect">
-                                    <input type="radio" id="otherSelect" name="platform" value="Other:" title="OtherSelect"/>
-                                    Other:
-                                    <label for="other">
-                                        <input type="text" id="other" name="platform" title="OtherText">
-                                    </label>
-                                </label>
-                            </div>
-                        </fieldset>
+                    <!-- Fieldset 4: Feature Review -->
+                    <fieldset id="fieldsetFour">
+                        <div>
+                            <legend>Feature Review</legend>
+                            <hr class="break">
+                            <p>If there are any features you like/disliked in particular input them and your reasoning
+                                behind them below.</p>
+                            <label for="pros">
+                                <p>Good Features</p>
+                            </label>
+                            <textarea id="pros" name="pros" rows="7"></textarea>
+                            <label for="cons">
+                                <p>Bad Features</p>
+                            </label>
+                            <textarea id="cons" name="cons" rows="7"></textarea>
 
-                        <!-- Fieldset 4: Feature Review -->
-                        <fieldset id="fieldsetFour">
-                            <div>
-                                <legend>Feature Review</legend>
-                                <hr class="break">
-                                <p>If there are any features you like/disliked in particular input them and your reasoning behind them below.</p>
-                                <label for="pros"><p>Good Features</p></label>
-                                <textarea id="pros" name="pros" rows="7"></textarea>
-                                <label for="cons"><p>Bad Features</p></label>
-                                <textarea id="cons" name="cons" rows="7"></textarea>
-                                
-                            </div>
-                        </fieldset>
-                    </div>
-                    <input type="submit" id="submit" value="submit" class="btn">
-                </form>
-            </div>
-        </main>
-        <footer>
-            <p>
-                &copy; Copyright 2023. All Rights Reserved.
-            </p>
-        </footer>
-    </body>
+                        </div>
+                    </fieldset>
+                </div>
+                <input type="submit" id="submit" value="submit" class="btn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; Copyright 2023. All Rights Reserved.
+        </p>
+    </footer>
+</body>
 
 </html>
-

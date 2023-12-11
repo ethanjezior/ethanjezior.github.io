@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <!-- Ethan Jezior template.html 9/14/23 -->
 <html id="html" lang="en">
-  
-  <head> 
-    <meta charset="utf-8">
-    <title> Home - Ethans Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css" type="text/css">
-  </head>
-  
-  <body>
-    <header>
-      <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
-    </header>
-    <h3 id="returnHomeNav" class="mobile ee">why hello there</h3>
-    <nav>
-      <ul>
-        <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="hide"><img class="logo hidemobile" src="images/logo.png" alt="logo"></li>
-      </ul>
-    </nav>
-    <script>
-      function toggleNav() {
-        var topnav = document.getElementById("mySidebar"),
+
+<head>
+  <meta charset="utf-8">
+  <title> Home - Ethans Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
+  </header>
+  <h3 id="returnHomeNav" class="mobile ee">why hello there</h3>
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="favorites.html">Favorites</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleNav() {
+      var topnav = document.getElementById("mySidebar"),
         main = document.getElementById("main");
-        topnav.style.height = topnav.style.height == "250px" ? '0' : '250px';
-        main.style.marginTop = main.style.marginTop === "250px" ? '0' : '250px';
-      }
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
-    </script>
-    <main>
-      <p id="welcome">
-        Welcome to my digital portfolio.
-      </p>
-    </main>
-    <footer>
-      <p>
-        &copy; Copyright 2023. All Rights Reserved.
-      </p>
-    </footer>
-  </body>
+      topnav.style.height = topnav.style.height == "250px" ? '0' : '250px';
+      main.style.marginTop = main.style.marginTop === "250px" ? '0' : '250px';
+    }
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+  <main>
+    <p id="welcome">
+      Welcome to my digital portfolio.
+    </p>
+  </main>
+  <footer>
+    <p>
+      &copy; Copyright 2023. All Rights Reserved.
+    </p>
+  </footer>
+</body>
 
 </html>

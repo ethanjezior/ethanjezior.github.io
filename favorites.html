@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Favorites - Ethans Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
+  </header>
+  <h3 id="returnHomeNav" class="mobile ee"></h3>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="favorites.html">Favorites</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleNav() {
+      var topnav = document.getElementById("mySidebar"),
+        main = document.getElementById("main");
+      topnav.style.height = topnav.style.height == "250px" ? '0' : '250px';
+      main.style.marginTop = main.style.marginTop === "250px" ? '0' : '250px';
+    }
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+  <main>
+    <h1 class="center underline">This page is dedicated to some of my favorite things</h1>
+    <!-- Favorites Grid: Format = 3x3 -->
+    <div class="grid-3x3">
+      <!-- Favorites Row -->
+      <div class="row">
+        <!-- Favorites Entry: (insert topic) -->
+        <div class="topic">
+          <h2>Favorite Games</h2>
+          <hr class="break">
+          <div>
+            <img src="" alt="" title="">
+            <figcaption></figcaption>
+            <p class="fav-description"></p>
+          </div>
+          <img>
+        </div>
+        <!-- Favorites Entry: (insert topic) -->
+        <div class="topic">
+          <h2>Favorite Book Series: Legend by Marie Lu</h2>
+          <hr class="break">
+          <div>
+            <img src="" alt="" title="">
+            <figcaption></figcaption>
+            <p class="fav-description"></p>
+          </div>
+          <img>
+        </div>
+        <!-- Favorites Entry: (insert topic) -->
+        <div class="topic">
+          <h2>Favorite Animal</h2>
+          <hr class="break">
+          <div>
+            <img src="" alt="" title="">
+            <figcaption></figcaption>
+            <p class="fav-description"></p>
+          </div>
+          <img>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      &copy; Copyright 2023. All Rights Reserved.
+    </p>
+  </footer>
+</body>
+
+</html>

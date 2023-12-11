@@ -79,7 +79,9 @@ footer p {
 .orange{
   border: 2px solid #ff8c1a;
 }
-
+.underline {
+  text-decoration: underline;
+}
 /*index page------------------------------------------*/
 #welcome {
   padding-top: 2%;
@@ -228,8 +230,53 @@ ul li a {
   width: 80vw; 
   height: 45vw; 
 }
-  
 
+/* Favorites Page */
+div.grid-3x3 {
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+div.grid-3x3 div.row {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  max-height: 50%;
+  padding: 0;
+}
+div.topic {
+  display: block;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  border: 1px solid #fff;
+  clear: none;
+}
+div.topic * {
+  display: block;
+  min-height: 10%;
+}
+div.topic h2 {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+}
+div.topic hr.break {
+  width: 70%;
+  margin-bottom: 10%;
+  min-height: 1px;
+  height: 1px;
+  border-collapse: collapse;
+}
+div.topic div figcaption {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
 /* Media Queries and Viewport Formatting -------------------------------------*/
 
 /* Show Mobile Class, hide Tablet-Desktop Class */
@@ -586,7 +633,7 @@ ul li a {
     max-height: 100%;
     list-style-type: none;
   }
-  nav ul, nav ul li, nav ul li.logo, nav ul li a {
+  nav ul, nav ul li, nav ul li a {
     box-sizing: border-box;
     height: 100%;
     object-fit: fill;
@@ -618,12 +665,6 @@ ul li a {
     width: 9vw;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
-  }
-  .logo {
-    display: inline-block;
-    height: 2vh;
-    width: auto;
-    margin: 0;
   }
   nav ul li a {
     display: block;
@@ -977,9 +1018,12 @@ ul li a {
     float: left;
     background-color: none;
     max-height: 100%;
+    max-width: 100%;
   }
   li#hat-link a {
+    box-sizing: border-box;
     background-color: #888;
+    width: 100%;
   }
   img#cowboyhat {
     box-sizing: border-box;
