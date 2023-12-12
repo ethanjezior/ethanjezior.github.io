@@ -1,0 +1,50 @@
+/*
+    Student Name
+	File Name: 
+	Current Date: 
+*/
+
+/* CSS reset */
+body, header, main, footer, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and page container */
+body {
+	background-color: #d9e6f2;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+    box-shadow: .5em .5em .5em #404040;
+}
+
+/* Style rules for header area */
+header h1 {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #264d73;
+	color: #fff;
+	padding: 1em;
+    text-align: center;
+}
+
+/* Style rules for main content  */
+main {
+	padding: 1em;
+	background-color: #fff;
+}
+
+main p, li {
+    font: 1em Helvetica, sans-serif;
+}
+
+/* Style rule for the footer element */
+footer {
+	font-size: .85em;
+	text-align: center;
+    padding: 2%;
+    background-color: #79a6d2;
+}

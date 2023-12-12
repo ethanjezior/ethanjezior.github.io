@@ -82,6 +82,19 @@ footer p {
 .underline {
   text-decoration: underline;
 }
+.subHead {
+  text-align: center;
+  font-size: 200%;
+  margin-top: 1%;
+  margin-bottom: .85%;
+}
+.trans {
+  width: 100%;
+  height: 1px;
+  padding-top: 2%;
+  color: transparent;
+  border: none;
+}
 /*index page------------------------------------------*/
 #welcome {
   padding-top: 2%;
@@ -392,6 +405,18 @@ div.topic div figcaption {
     padding: 0;
     text-decoration: none;
   }
+  .subHead {
+    font-size: 160%;
+    margin-top: 1%;
+    margin-bottom: .85%;
+  }
+  .trans {
+    width: 100%;
+    height: 1px;
+    padding-top: 2%;
+    color: transparent;
+    border: none;
+  }
   main {
     position: static;
     padding: 0 1vw;
@@ -438,6 +463,15 @@ div.topic div figcaption {
   }
   .project-nav li h3 {
     font-size: 10vw;
+  }
+  h2#java, h2#java-script, h2#html-css, h2#c-sharp, h2#c-plus-plus {
+    font-size: 9vw;
+    font-weight: bold;
+  }
+  .project-entry {
+    color: #ccc;
+    font-size: 125%;
+    text-decoration: none;
   }
 
   /* Form Styles */
@@ -1000,7 +1034,7 @@ div.topic div figcaption {
     height: fit-content;
     width: 100%;
     margin: 0 auto;
-    padding: 1% 4% 1% 8%;
+    padding: 1% 0;
   }
   figcaption{
     color: #000;

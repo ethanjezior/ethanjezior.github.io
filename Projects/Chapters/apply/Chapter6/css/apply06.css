@@ -1,0 +1,47 @@
+/*
+Author:
+Date:
+File Name: 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, article, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body */
+body {
+	background-color: #fe9972;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for the header element */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	margin: 1em;
+	text-align: center;
+    color: #341509;
+}
+
+/* Style rules for the main content  */
+main {
+    padding: 1%;
+}
+
+article {
+    background-color: #a22c02;
+    color: #ffe5dc;
+    padding: 2%;
+    margin: 2% 1%;
+    border: 1px solid #000;
+}
+
+/* Style rule for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+    color: #341509;
+}

@@ -1,0 +1,92 @@
+/*
+Student: Ethan Jezior
+Date: 12/12/23
+File Name: styles06.css
+*/
+
+/* CSS Reset */
+body, header, main, footer, h1, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #e4f1f6;
+}
+
+/* Style rules for header */
+header {
+	padding: 2%;
+	text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Arial, serif;
+}
+
+/* Style rules for main content */
+
+main {
+    margin: 0 4%;
+}
+
+.box {
+    border: 1px solid #000;
+    height: 200px;
+    width: 200px;
+}
+
+/* Gradient style rules */
+.gradient1 {
+    background: linear-gradient(to right, #67afcb, #1a3e4c 25%);
+}
+.gradient2 {
+    background: linear-gradient(to left, #d4f7ec, #448d76 90%);
+}
+.gradient3 {
+    background: linear-gradient(to top left, #efddfd, #36065b);
+}
+.gradient4 {
+    background: linear-gradient(#e6e6ff, #70dbdb, #ffffcc, #cc6699);
+}
+.gradient5 {
+    background: repeating-linear-gradient(#df80ff 10%, #ccffff 20%);
+}
+.gradient6 {
+    background: linear-gradient(to right, rgba(0,0,153,0) 25%, rgba(0,0,153,1));
+}
+.gradient7 {
+    background: radial-gradient(#0000ff, #fff, #ff0000);
+}
+.gradient8 {
+    background: repeating-radial-gradient(#0000ff, #fff, #ff0000 15%);
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .90em;
+	text-align: center;
+	padding: 2%;
+    clear: left;
+}
+
+/* Media Query for Tablet Viewports */
+@media screen and (min-width: 481px) {
+    
+    .columns {
+        width: 50%;
+        float: left;
+    }
+    
+}
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 1200px) {
+    
+    .columns {
+        width: 25%;
+    }
+    
+}

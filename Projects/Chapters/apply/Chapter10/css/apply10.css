@@ -1,0 +1,64 @@
+/*
+    Student Name
+	File Name: 
+	Current Date: 
+*/
+
+/* CSS reset */
+body, header, main, section, footer, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f0d8d1;
+}
+
+
+/* Style rules for header */
+header {
+	padding: 3%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* Style rules for main content area  */
+main {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin: 0 2%;
+	padding: 1em;
+	background-color: #fff;
+	border: 5px double #33091b; 
+    padding: 2%;
+}
+
+h2 {
+    padding-bottom: 1%;
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+button {
+    height: 3em;
+    font-size: 1em;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #33091b;
+    margin-left: 6%;
+}
+
+/* Style rules for the footer */
+footer {
+	font-size: .90em;
+	text-align: center;
+	margin-top: 2em;
+}

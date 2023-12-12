@@ -1,0 +1,67 @@
+/*
+    Student Name: Ethan Jezior
+	File Name: apply09.css
+	Current Date: 12/12/23
+*/
+
+/* CSS reset */
+body, header, main, section, footer, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background-color: #e5e0fa;
+}
+
+/* Styles for Mobile Layout */
+
+/* Style rule for the header */
+header {
+	padding: 2%;
+	color: #110934;
+	text-align: center;
+    font-size: 2em;
+}
+
+/* Style rules for the main content  */
+main {
+    font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1em;
+	padding: 2%;
+	background-color: #fff;
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .90em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+ 
+    /* Desktop Viewport: Style rules for the main content */
+    main {
+        margin-bottom: 1%;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+    }
+
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1441px) {
+ 
+    #container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    
+}
