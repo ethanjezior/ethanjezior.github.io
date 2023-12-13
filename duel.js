@@ -13,15 +13,58 @@ window.addEventListener('DOMContentLoaded', () => {
             return this.list[this.index];
         }
     }
-
     audio.onended = function () {
         tracks.next();
         audio.src = tracks.play();
         audio.load();
         audio.play();
     }
-
     audio.src = tracks.play();
+
+    // Toggle Tumbleweed Animation
+    document.getElementById("twToggle").addEventListener("click", twToggle);
+    function twToggle() {
+        var tw = document.getElementById("tumbleWeed");
+        if (tw.style.display == "none") {
+            tw.style.display = "block";
+            tw.style.width = "5%";
+            tw.style.height = "5%";
+        } else {
+            tw.style.display = "none";
+        }
+    }
+    // Variable Tumbleweed Animation
+    var tw = document.getElementById("tumbleWeed");
+    var id = null;
+    if (tw.style.display == "block") {
+        window.onload = function tumbleweedAnimation() {
+            tw = document.getElementById("tumbleWeed");
+            var posX = 0;
+            var posY = 0;
+            clearInterval(id);
+            id = setInterval(frame, 10);
+            function frame() {
+                if (posX == 100 + '%' || posY == 100 + '%') {
+                    clearInterval(id);
+                    tw.style.display = "none";
+                } else {
+                    tw.style.display = "block";
+                    tw.style.width = "5%";
+                    tw.style.height = "5%";
+
+                    posY += 1;
+                    posX +=1;
+                    tw.style.top = posY + '%';
+                    tw.style.left = posX + '%';
+                }
+            }
+            /* Parabola Equation For TumbleWeed Animation Path
+                f\left(x\right)\ =-x^{2}+1
+                g\left(x\right)\ =2\left(.5x-\operatorname{floor}\left(.5x\right)\right)-1
+                f\left(g\left(x\right)\right)
+            */
+        }
+    }
 
     // Tic-Tac-Toe / Tic-Tac-Toe^2 Toggle
     document.getElementById("gameModeToggle").addEventListener("click", gameModeToggle);

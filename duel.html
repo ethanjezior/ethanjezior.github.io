@@ -19,6 +19,7 @@
         </ul>
     </nav>
     <main class="duel">
+        <!-- Console div -->
         <div id="console">
             <h1 id="console-header">Console</h1>
             <div id="console-content">
@@ -28,22 +29,28 @@
                 </audio>
                 <button class="gameToggle" type="button" id="gameModeToggle" title="Toggles between Tic-Tac-Toe and Tic-Tac-Toe^2">Gamemode</button>
                 <button class="gameToggle" type="button" id="playerModeToggle" title="Toggles between Singleplayer and Multiplayer">Playermode</button>
+                <button class="gameToggle" type="button" id="twToggle" title="Toggles between Showing and Hiding Tumbleweed Animation">Show Tumbleweeds</button>
             </div>
         </div>
-        <div id="game">
+
+        <!-- Game div / Animation Container -->
+        <div id="game" class="animationContainer">
+            <img src="images/tumbleweed.png" class="animation" id="tumbleWeed">
+
+            <!-- TicTacToe Table -->
             <table id="tictactoe">
                 <h1 id="tictactoeHead">Tic-Tac-Toe</h1>
-                <tr>
+                <tr> <!-- Top Row -->
                     <td class="tile"></td>
                     <td class="tile"></td>
                     <td class="tile"></td>
                 </tr>
-                <tr>
+                <tr> <!-- Middle Row -->
                     <td class="tile"></td>
                     <td class="tile"></td>
                     <td class="tile"></td>
                 </tr>
-                <tr>
+                <tr> <!-- Bottom Row -->
                     <td class="tile"></td>
                     <td class="tile"></td>
                     <td class="tile"></td>
@@ -53,161 +60,163 @@
                     <button id="reset" type="button">Reset</button>
                 </section>
             </table>
+
+            <!-- TicTacToe^2 Table -->
             <table id="tictactoe2">
                 <h1 id="tictactoe2Head">Tic-Tac-Toe^2</h1>
-                <tr> <!-- Start of Outer-Row 1 -------------------->
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
+                <tr> <!-- Top Outer-Row -------------------->
+                    <td> <!-- Outer Tile 1 -->
+                        <tr> <!-- Outer Tile 1: Inner-Row 1 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
+                        <tr> <!-- Outer Tile 1: Inner-Row 2 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                    </td>
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
+                        <tr> <!-- Outer Tile 1: Inner-Row 3 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
                     </td>
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
+                    <td> <!-- Outer Tile 2 -->
+                        <tr> <!-- Outer Tile 2: Inner-Row 1 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
+                        <tr> <!-- Outer Tile 2: Inner-Row 2 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                    </td>
-                </tr>
-                <tr> <!-- Start of Outer-Row 2 -------------------->
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
+                        <tr> <!-- Outer Tile 2: Inner-Row 3 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
                     </td>
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
+                    <td> <!-- Outer Tile 3 -->
+                        <tr> <!-- Outer Tile 3: Inner-Row 1 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
+                        <tr> <!-- Outer Tile 3: Inner-Row 2 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                    </td>
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
+                        <tr> <!-- Outer Tile 3: Inner-Row 3 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
                     </td>
                 </tr>
-                <tr> <!-- Start of Outer-Row 3 -------------------->
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
+                <tr> <!-- Middle Outer-Row -------------------->
+                    <td> <!-- Outer Tile 4 -->
+                        <tr> <!-- Outer Tile 4: Inner-Row 1 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
+                        <tr> <!-- Outer Tile 4: Inner-Row 2 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                    </td>
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                            <td class="tile2"></td>
-                        </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
+                        <tr> <!-- Outer Tile 4: Inner-Row 3 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
                     </td>
-                    <td>
-                        <tr> <!-- Start of Inner-Row 1 -->
+                    <td> <!-- Outer Tile 5 -->
+                        <tr> <!-- Outer Tile 5: Inner-Row 1 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 2 -->
+                        <tr> <!-- Outer Tile 5: Inner-Row 2 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                         </tr>
-                        <tr> <!-- Start of Inner-Row 3 -->
+                        <tr> <!-- Outer Tile 5: Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td> <!-- Outer Tile 6  -->
+                        <tr> <!-- Outer Tile 6: Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 6: Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 6: Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr> <!-- Bottom Outer-Row  -------------------->
+                    <td> <!-- Outer Tile 7 -->
+                        <tr> <!-- Outer Tile 7: Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 7: Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 7: Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td> <!-- Outer Tile 8 -->
+                        <tr> <!-- Outer Tile 8: Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 8: Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 8: Inner-Row 3 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                    </td>
+                    <td> <!-- Outer Tile 9 -->
+                        <tr> <!-- Outer Tile 9: Inner-Row 1 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 9: Inner-Row 2 -->
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                            <td class="tile2"></td>
+                        </tr>
+                        <tr> <!-- Outer Tile 9: Inner-Row 3 -->
                             <td class="tile2"></td>
                             <td class="tile2"></td>
                             <td class="tile2"></td>

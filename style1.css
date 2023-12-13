@@ -1011,10 +1011,6 @@ div.topic div figcaption {
     text-align: center;
     text-decoration: none;
   }
-  .projects, .project-entry, .row {
-    display: inline-flexbox;
-    overflow-y: hidden;
-  }
   .projects {
     width: 100%;
     height: fit-content;
@@ -1064,6 +1060,14 @@ div.topic div figcaption {
     max-height: 100%;
     object-fit: contain;
     background-color: none;
+  }
+  .animation {
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  div#game, table#tictactoe, table#tictactoe *, table#tictactoe2, table#tictactoe2 * {
+    position: static;
   }
   .center {
     text-align: center;
