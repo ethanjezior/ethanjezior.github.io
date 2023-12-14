@@ -7,34 +7,24 @@
   <title>Home - Ethans Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style1.css" type="text/css">
+  <link rel="script" href="navcollapse.js" type="text/Java-Script">
 </head>
 
 <body>
   <header>
-    <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
+      <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
   </header>
   <h3 id="returnHomeNav" class="mobile ee">why hello there</h3>
   <nav>
     <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="favorites.html">Favorites</a></li>
+      <button class="toggleNav mobile">&#9776; Navigation</button>
+      <li class="navLi-One"><a class="active" href="index.html">Home</a></li>
+      <li class="navLi-Two"><a href="news.html">News</a></li>
+      <li class="navLi-Three"><a href="about.html">About</a></li>
+      <li class="navLi-Four"><a href="projects.html">Projects</a></li>
+      <li class="navLi-Five"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <script>
-    function toggleNav() {
-      var topnav = document.getElementById("mySidebar"),
-        main = document.getElementById("main");
-      topnav.style.height = topnav.style.height == "250px" ? '0' : '250px';
-      main.style.marginTop = main.style.marginTop === "250px" ? '0' : '250px';
-    }
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-  </script>
   <main>
     <p id="welcome">
       Welcome to my digital portfolio.
