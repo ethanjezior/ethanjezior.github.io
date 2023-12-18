@@ -7,25 +7,30 @@
   <title>Home - Ethans Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style1.css" type="text/css">
-  <link rel="script" href="navcollapse.js" type="text/js">
 </head>
 
 <body>
+  <!-- Skip to Content Link -->
+  <a class="skip" href="#content">Skip to content</a>
+
+  <!-- Page Header -->
   <header>
       <a href="#returnHomeNav"><img class="header" src="images/header.png" alt="header"></a>
   </header>
   <h3 id="returnHomeNav" class="mobile ee">why hello there</h3>
+
   <nav>
     <ul>
-      <button class="toggleNav mobile">&#9776; Navigation</button>
-      <li class="navLi navLi-One"><a class="active" href="index.html">Home</a></li>
-      <li class="navLi navLi-Two"><a href="news.html">News</a></li>
-      <li class="navLi navLi-Three"><a href="about.html">About</a></li>
-      <li class="navLi navLi-Four"><a href="projects.html">Projects</a></li>
-      <li class="navLi navLi-Five"><a href="contact.html">Contact</a></li>
+      <li class="navCol"><button class="mobile" id="toggleNav" type="button">&#9776; Navigation</button></li>
+      <li class="navLi"><a class="navA active" href="index.html">Home</a></li>
+      <li class="navLi"><a class="navA" href="news.html">News</a></li>
+      <li class="navLi"><a class="navA" href="about.html">About</a></li>
+      <li class="navLi"><a class="navA" href="projects.html">Projects</a></li>
+      <li class="navLi"><a class="navA" href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main>
+
+  <main id="content">
     <p id="welcome">
       Welcome to my digital portfolio.
     </p>
@@ -35,6 +40,7 @@
       &copy; Copyright 2023. All Rights Reserved.
     </p>
   </footer>
+  <script src="navcollapse.js"></script>
 </body>
 
 </html>
