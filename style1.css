@@ -267,8 +267,8 @@ ul.project-nav li a {
   height: 45vw; 
 }
 
-/* Favorites Page */
-div.grid-3x3 {
+
+.grid-3x3 {
   grid-template-columns: auto auto auto;
   -ms-grid-columns: auto auto auto;
   width: 100%;
@@ -277,7 +277,7 @@ div.grid-3x3 {
   margin: 0 auto;
   padding: 0;
 }
-div.grid-3x3 div.row {
+.grid-3x3 .row {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
