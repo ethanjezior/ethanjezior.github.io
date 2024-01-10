@@ -11,8 +11,8 @@ html body, header, p, nav, main, footer, div, img, ul {
   overflow-x: hidden;
   scrollbar-width: none;
 }
-::webkit-scrollbar, -ms-overflow-style, ::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar, ::-ms-overflow-style {
+  width: none;
 }
 
 /* Style Rules for skip navigation link */
@@ -72,10 +72,6 @@ main {
   margin: 1vw auto 0 auto;
   overflow-y: auto;
   -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-main::-webkit-scrollbar {
-  display: none;
 }
 .break {
   max-width: 80vw;
@@ -131,11 +127,11 @@ footer p {
   white-space: normal;
 }
 .clear {
-  width: 100%;
   clear: both;
   display: inline-block;
-  font-size: 3vh;
-  padding: 0;
+}
+h1.clear {
+  text-align: center;
 }
 li .aboutmain, .aboutmain, li .animain, .animain{
   border: none;
@@ -157,6 +153,44 @@ div#about-pics {
 }
 div#about-content {
   width: 100%;
+}
+main#aboutmain h1.clear {
+  text-align: center;
+  width: 100%;
+}
+.grid {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto 1% auto;
+}
+.topic {
+  width: 80vw;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+.topic h2 {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+}
+.topic hr.break {
+  width: 70%;
+  margin-bottom: none;
+  min-height: 1px;
+  height: 1px;
+  border-collapse: collapse;
+}
+div.topic img {
+  object-fit: contain;
+}
+div.topic iframe {
+  position: static;
+  box-sizing: border-box;
+  z-index: 0;
 }
 
 /*projects page------------------------------------------*/
@@ -267,53 +301,6 @@ ul.project-nav li a {
   height: 45vw; 
 }
 
-/* Favorites Page */
-div.grid-3x3 {
-  grid-template-columns: auto auto auto;
-  -ms-grid-columns: auto auto auto;
-  width: 100%;
-  height: fit-content;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-div.grid-3x3 div.row {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  height: fit-content;
-  max-height: 50%;
-  padding: 0;
-}
-div.topic {
-  display: block;
-  box-sizing: border-box;
-  width: 30%;
-  height: 100%;
-  border: 1px solid #fff;
-  clear: none;
-}
-div.topic * {
-  display: block;
-  min-height: 10%;
-}
-div.topic h2 {
-  font-size: x-large;
-  text-align: center;
-  font-weight: bold;
-}
-div.topic hr.break {
-  width: 70%;
-  margin-bottom: 10%;
-  min-height: 1px;
-  height: 1px;
-  border-collapse: collapse;
-}
-div.topic div figcaption {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-}
 /* Media Queries and Viewport Formatting -------------------------------------*/
 
 /* Show Mobile Class, hide Tablet-Desktop Class */
@@ -333,6 +320,7 @@ div.topic div figcaption {
     top: 0;
     margin-top: 0;
     float: inherit;
+    z-index: 2;
   }
   header a {
     width: 100%;
@@ -365,7 +353,7 @@ div.topic div figcaption {
     width: 99vw;
   }
   nav {
-    position: -webkit-fixed;
+    
     position: static;
     width: 100%;
     height: fit-content;
@@ -941,17 +929,49 @@ div.topic div figcaption {
   #aboutmain {
     min-height: 90vh;
     padding-left: 3vw;
+    padding-right: 3vw;
   }
   .clear {
     clear: both;
     display: inline-block;
   }
-    .aboutmain li, .aboutmain {
-    float: left;
-    clear: both;
-    font-size: 1em;
-    border: none;
-    background-color: none;
+  h1.clear {
+    text-align: center;
+  }
+  .aboutmain li, .aboutmain {
+  float: left;
+  clear: both;
+  font-size: 1em;
+  border: none;
+  background-color: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  div.topic {
+    display: block;
+    width: 100%;
+    border: 1px solid #fff;
+    clear: none;
+    overflow: hidden;
+  }
+  div.topic hr.break {
+    width: 70%;
+    margin-bottom: 3%;
+    padding-bottom: 0;
+    min-height: 1px;
+    height: 1px;
+    border-collapse: collapse;
+  }
+  div.topic figcaption {
+    background-color: transparent;
+    position: relative;
+    box-sizing: border-box;
+    color: #fff;
   }
   .indent {
     background-color: none;
@@ -976,7 +996,7 @@ div.topic div figcaption {
     clear: none;
   }
   div#about-content {
-    width: 75%;
+    width: auto;
   }
   .animalpic {
     max-height: none;
@@ -1000,7 +1020,7 @@ div.topic div figcaption {
     width: 40%;
     margin-right: 10%;
   }
-
+  
   /*Wide-Screen projects page------------------------------------------*/
   div.ignore {
     display: block;

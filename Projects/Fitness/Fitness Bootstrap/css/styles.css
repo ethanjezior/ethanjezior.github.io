@@ -1,0 +1,110 @@
+/*
+    Student Name: Ethan Jezior
+    File Name: styles.css
+    Date: 1/8/24
+*/
+
+/* Begin Mobile Styles */
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for hero image and header */
+.hero {
+    background-image: 
+    linear-gradient(rgba(0,0,0,.5), 
+    rgba(0,0,0.5)), url(../images/hero-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.welcome {
+    position: absolute;
+    top: 20%;
+    margin: auto;
+    padding: 2em;
+}
+
+.welcome p {
+    font-size: 1.25em;
+    width: 70%;
+    line-height: 1.5;
+}
+
+/* Style rule for Nutrition hero text */
+#nutr.display-1 {
+    font-size: 4em;
+}
+
+/* Style rule for map */
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+/* Style rule for labels */
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) {  
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Nutrition hero text */
+    #nutr.display-1 {
+        font-size: 6em;
+    }
+    
+    /* Tablet Viewport: Style rule for map */
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+    
+     /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) {  
+
+    /* Desktop Viewport: Style rules for form */
+    form {
+        width: auto;
+        margin-bottom: 2%;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px; 
+    }
+    
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+}
