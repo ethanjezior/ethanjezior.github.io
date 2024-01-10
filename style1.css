@@ -81,6 +81,10 @@ footer p {
   position: static;
   color:#777;
 }
+footer img.socialmedia {
+  position: static;
+  width: 2%;
+}
 .green{
   border: 2px solid #2eb82e;
 }
@@ -453,6 +457,9 @@ ul.project-nav li a {
     text-decoration: none;
   }
   */
+  footer img.socialmedia {
+    width: 13%;
+  }
   .subHead {
     font-size: 160%;
     margin-top: 1%;
