@@ -122,7 +122,14 @@ footer img.socialmedia {
   text-align: center;
   font-size: 1.8750em; /* ~30px */
 }
-
+.homeImageContainer {
+  height: 80vh;
+}
+.homeImage {
+  width: 33.1%;
+  margin: 0;
+  height: 100%;
+}
 /*news page------------------------------------------*/
 
 /*about page------------------------------------------*/
