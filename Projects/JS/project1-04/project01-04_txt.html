@@ -33,11 +33,21 @@
             <legend><span>Choose an address</span></legend>
             <label for="homeoption" id="homeaddr">
                <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+               <script>document.write(homeStreet + "<br>" + homeCity + ", " + homeState + " " + homeCode)</script>
+               <input type="radio" id="homeoption" name="shippingaddr" 
+               onclick="document.getElementById('street').value = homeStreet;
+                        document.getElementById('city').value = homeCity;
+                        document.getElementById('state').value = homeState;
+                        document.getElementById('code').value = homeCode;"/>
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <script>document.write(workStreet + "<br>" + workCity + ", " + workState + " " + workCode)</script>
+               <input type="radio" id="workoption" name="shippingaddr" 
+               onclick="document.getElementById('street').value = workStreet;
+                        document.getElementById('city').value = workCity;
+                        document.getElementById('state').value = workState;
+                        document.getElementById('code').value = workCode;"/>
             </label>
          </fieldset>
          
